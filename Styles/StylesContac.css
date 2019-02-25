@@ -46,5 +46,9 @@ button{
     margin-left: .5em;
 }
 body{
-    background-color: beige;
+    background-image: url("http://i67.tinypic.com/2hds9ic.jpg");
+}
+
+footer{
+    text-align: right;
 }
