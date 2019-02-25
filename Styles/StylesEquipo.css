@@ -1,0 +1,50 @@
+#DIV_1 {
+    color: rgb(17, 17, 17);
+    display: flex;
+    height: 250px;
+    width: 900px;
+    border-top: 1px solid rgb(170, 170, 170);
+    border-right: 0px none rgb(17, 17, 17);
+    border-bottom: 1px solid rgb(170, 170, 170);
+    border-left: 0px none rgb(17, 17, 17);
+    font: normal normal 300 normal 23.1px / 31.5px "Scope One", serif;
+    margin: 40px 0px;
+    padding: 20px 0px;
+}/*#DIV_1*/
+
+
+#IMG_2 {
+    height: 225px;
+    max-width: 100%;
+    width: 225px;
+    border-radius: 50%;
+    margin: 0px 20px;
+}/*#IMG_2*/
+
+
+
+#DIV_3 {
+    height: 272.094px;
+    min-height: auto;
+    min-width: auto;
+    width: 631px;
+    font: normal normal 300 normal 23.1px / 31.5px "Scope One", serif;
+}/*#DIV_3*/
+
+
+#H5_4 {
+    color: rgb(17, 17, 17);
+    height: 34px;
+    letter-spacing: -2px;
+    width: 631px;
+    font: normal normal 700 normal 31.5px / 34.65px Montserrat, "Times New Roman", fantasy;
+    margin: 0px;
+}/*#H5_4*/
+
+
+#P_5 {
+    height: 63px;
+    width: 631px;
+    font: normal normal 300 normal 22.05px / 28.665px "Scope One", serif;
+    margin: 22.05px 0px;
+}/*#P_5*/
