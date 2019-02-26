@@ -1,8 +1,5 @@
 body{
-
-
 background-image: url("http://i67.tinypic.com/2hds9ic.jpg");
-
 }
 #titulo{
     width: 900px;
@@ -47,7 +44,7 @@ background-image: url("http://i67.tinypic.com/2hds9ic.jpg");
 
 
 .Nombre{
-    background-color: azure;
+    /*background-color: azure;*/
     color: rgb(17, 17, 17);
     height: 34px;
     letter-spacing: -2px;
@@ -58,7 +55,7 @@ background-image: url("http://i67.tinypic.com/2hds9ic.jpg");
 
 
 .Info{
-    background-color: #D8EBF6;
+    /*background-color: #D8EBF6;+/
     color: rgb(17, 17, 17);
     height: 63px;
     width: 631px;
