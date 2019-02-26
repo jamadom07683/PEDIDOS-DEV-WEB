@@ -10,6 +10,8 @@
 
 .navbar-toggler{  background:#fff !important;}
 
+
+
 /*encabezado*/
 .header{
  background-image: url('../Images/shopping.jpg');
@@ -45,6 +47,7 @@
 .productos{
  margin: 4em 0;
  position: relative;
+
 }
 .productos h1{
  color:#F97300;
