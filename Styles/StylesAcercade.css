@@ -28,3 +28,17 @@ background: linear-gradient(to right, rgba(183,222,237,1) 0%, rgba(33,180,226,1)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=1 );
 
 }
+.navbar{ background:#424242;}
+
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: #424242; color: #f97300; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background:#fff !important;}
+
+
+

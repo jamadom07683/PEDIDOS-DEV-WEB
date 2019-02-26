@@ -86,3 +86,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', end
 footer{
     text-align: right;
 }
+
+.navbar{ background:#424242;}
+
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: #424242; color: #f97300; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background:#fff !important;}
+
+
