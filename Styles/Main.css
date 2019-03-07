@@ -104,6 +104,15 @@ background-image: linear-gradient(to top, #FFFFFF 0%, #000000 100%);
     width: 100%;
     border-radius: 50%
 }
+.links{
+    color: rgb(17, 17, 17);
+    /*display: flex;*/
+    height: 51px;
+    width: 631px;
+    justify-content: center;
+    border: 0px none rgb(17, 17, 17);
+    font: normal normal 300 normal 23.1px / 31.5px "Scope One", serif;
+}
 .about span{
  display: block;
  color: #888;
@@ -121,6 +130,8 @@ background-image: linear-gradient(to top, #FFFFFF 0%, #000000 100%);
  line-height:2;
  color:black;
 }
+
+
 
 /*Contacto*/
 
