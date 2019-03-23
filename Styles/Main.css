@@ -187,3 +187,8 @@ background-image: linear-gradient(to top, #FFFFFF 0%, #000000 100%);
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e9ecef;
 }
+.mensajegraci{
+    font-size: 50px;
+    font-family: cursive;
+    color:cadetblue;
+}
