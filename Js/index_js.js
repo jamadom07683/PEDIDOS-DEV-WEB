@@ -6,7 +6,6 @@ $(document).ready(function () {
 })
 
 
-
 function validar() {
     var miCampo = document.getElementById("name1").value;
     var miTelefono = document.getElementById("numer").value;
@@ -15,8 +14,12 @@ function validar() {
     var patronCorreo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     if (miCampo.length === 0 || /^\s+$/.test(miCampo)) {
         alert('El campo de nombre esta vacio!');
+    } else if(miCampo.length > 0 ){
+        if(miCampo.match(/^[a-z]+$/i)=== null){
+            alert('El nombre debe tener solo letras');
+        }
     } else if (miCorreo.length === 0 || /^\s+$/.test(miCorreo)) {
-        alert('El campo de correo esta vacio!')
+        alert('El campo de correo esta vacio!');
     } else if (miTelefono.length == 0 || /^\s+$/.test(miTelefono)) {
         alert('El campo de telefono esta vacio!');
     } else if (miMensaje.length == 0 || /^\s+$/.test(miMensaje)) {
