@@ -12,42 +12,32 @@ function validar() {
     var miTelefono = document.getElementById("numer").value;
     var miCorreo = document.getElementById("correo").value;
     var miMensaje = document.getElementById("mensaje2").value;
-    valueForm.object.value;
     var patronCorreo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     if (miCampo.length === 0 || /^\s+$/.test(miCampo)) {
-        alert('El campo de texto esta vacio!');
-        return false;
-    }
-    return true;
-    if (valueForm.search(patronCorreo) == 0) {
-        return true
-    } else {
-        alert('El correo electronico no es valido')
-    }
-    if (miTelefono.length == 0 || /^\s+$/.test(miTelefono)) {
-        alert('El campo de texto esta vacio!');
-        return false;
-    }
-    return true
-    if (miMensaje.length == 0 || /^\s+$/.test(miMensaje)) {
-        alert('El campo de texto esta vacio!');
-        return false;
+        alert('El campo de nombre esta vacio!');
+    } else if (miCorreo.length === 0 || /^\s+$/.test(miCorreo)) {
+        alert('El campo de correo esta vacio!')
+    } else if (miTelefono.length == 0 || /^\s+$/.test(miTelefono)) {
+        alert('El campo de telefono esta vacio!');
+    } else if (miMensaje.length == 0 || /^\s+$/.test(miMensaje)) {
+        alert('El mensaje esta vacio!');
     }
 }
 
-var buttonValidation=document.getElementById('validateButton');
+var buttonValidation = document.getElementById('validateButton');
 
-buttonValidation.addEventListener("click",validar());
+buttonValidation.addEventListener('click', validar);
 
 
-$(document).ready(function() {
-    $("#validateButton").click(function() {
+/*
+$(document).ready(function () {
+    $("#validateButton").click(function () {
         $(this).hide();
     });
 });
 
-$(document).ready(function(){
-    $("#validateButton").click(function(){
+$(document).ready(function () {
+    $("#validateButton").click(function () {
         $("#Contacto").load("Enlace.html");
     });
-});
+});*/
