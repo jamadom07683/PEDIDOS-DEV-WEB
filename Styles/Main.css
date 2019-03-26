@@ -189,6 +189,7 @@ form .row:first-child .floating-label-form-group {
 }
 .mensajegraci{
     font-size: 50px;
-    font-family: cursive;
-    color:cadetblue;
+    /*font-family: cursive;*/
+    color: #10828C;
+    font-weight: bolt;
 }
