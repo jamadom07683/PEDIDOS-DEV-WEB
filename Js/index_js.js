@@ -5,11 +5,13 @@ $(document).ready(function () {
 
 })
 
+
+
 function validar() {
-    var miCampo = document.getElementById("#name1").value;
-    var miTelefono = document.getElementById("#numer").value;
-    var miCorreo = document.getElementById("#correo").value;
-    var miMensaje = document.getElementById("#mensaje2").value;
+    var miCampo = document.getElementById("name1").value;
+    var miTelefono = document.getElementById("numer").value;
+    var miCorreo = document.getElementById("correo").value;
+    var miMensaje = document.getElementById("mensaje2").value;
     valueForm.object.value;
     var patronCorreo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     if (miCampo.length === 0 || /^\s+$/.test(miCampo)) {
@@ -31,5 +33,21 @@ function validar() {
         alert('El campo de texto esta vacio!');
         return false;
     }
-
 }
+
+var buttonValidation=document.getElementById('validateButton');
+
+buttonValidation.addEventListener("click",validar());
+
+
+$(document).ready(function() {
+    $("#validateButton").click(function() {
+        $(this).hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#validateButton").click(function(){
+        $("#Contacto").load("Enlace.html");
+    });
+});
