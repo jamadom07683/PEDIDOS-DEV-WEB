@@ -14,16 +14,30 @@ function validar() {
     var patronCorreo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     if (miCampo.length === 0 || /^\s+$/.test(miCampo)) {
         alert('El campo de nombre esta vacio!');
-    } else if(miCampo.length > 0 ){
-        if(miCampo.match(/^[a-z]+$/i)=== null){
-            alert('El nombre debe tener solo letras');
-        }
+    } else if(miCampo.length > 0 && miCampo.match(/^[a-z]+$/i)=== null){
+        alert('El nombre debe tener solo letras');
     } else if (miCorreo.length === 0 || /^\s+$/.test(miCorreo)) {
         alert('El campo de correo esta vacio!');
+    } else if (miCorreo.length > 0 && miCorreo.match(patronCorreo) === null){
+        alert('El campo del correo debe ser un correo valido!')
     } else if (miTelefono.length == 0 || /^\s+$/.test(miTelefono)) {
         alert('El campo de telefono esta vacio!');
-    } else if (miMensaje.length == 0 || /^\s+$/.test(miMensaje)) {
+    } else if(miTelefono.length>0 && miTelefono.length !== 7 && miTelefono.length !==10){
+        alert('El campo de telefono debe contener 7 o 10 digitos!')
+    }else if (miMensaje.length == 0 || /^\s+$/.test(miMensaje)) {
         alert('El mensaje esta vacio!');
+    }else{
+        $(document).ready(function () {
+            $("#validateButton").click(function () {
+                $(this).hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#validateButton").click(function () {
+                $("#Contacto").load("Enlace.html");
+            });
+        });
     }
 }
 
