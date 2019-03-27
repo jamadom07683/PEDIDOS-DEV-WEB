@@ -1,13 +1,10 @@
-//alert("Hola Mundo");
-console.log("qui azco");
-$(document).ready(function () {
-    $('.header').height($(window).height());
+$(document).ready(function(){
+ $('.header').height($(window).height());
 
 })
 
-
-function validar() {
-    var miCampo = document.getElementById("name1").value;
+function validar(){
+   var miCampo = document.getElementById("name1").value;
     var miTelefono = document.getElementById("numer").value;
     var miCorreo = document.getElementById("correo").value;
     var miMensaje = document.getElementById("mensaje2").value;
@@ -41,13 +38,8 @@ function validar() {
         });
 
     }
-}
 
+}
 var buttonValidation = document.getElementById('validateButton');
 
 buttonValidation.addEventListener('click', validar);
-
-
-
-
-
