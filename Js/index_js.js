@@ -4,12 +4,6 @@ $(document).ready(function(){
 
 })
 
-function validarFormulario(){
-    jQuery.validator.messages.required = 'Este campo es obligatorio';
-    jQuery.validator.messages.number = 'Este campo debe ser numerico';
-    jQuery.validator.messages.email= 'La direccion de correo es incorrecta';
-    $("#contactForm").validate();
-}
 
 function validar(){
     var miCampo=document.getElementById("#name1").value;
