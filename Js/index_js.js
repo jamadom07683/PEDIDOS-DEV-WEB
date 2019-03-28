@@ -1,20 +1,18 @@
-//alert("Hola Mundo");
-console.log("qui azco");
-$(document).ready(function () {
-    $('.header').height($(window).height());
+$(document).ready(function(){
+ $('.header').height($(window).height());
 
 })
 
-
-function validar() {
-    var miCampo = document.getElementById("name1").value;
+function validar(){
+   var miCampo = document.getElementById("name1").value;
     var miTelefono = document.getElementById("numer").value;
     var miCorreo = document.getElementById("correo").value;
     var miMensaje = document.getElementById("mensaje2").value;
+    var patronTexto=/^[A-Za-z\_\-\.\s\xF1\xD1]+$/;
     var patronCorreo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     if (miCampo.length === 0 || /^\s+$/.test(miCampo)) {
         alert('El campo de nombre esta vacio!');
-    } else if(miCampo.length > 0 && miCampo.match(/^[a-z]+$/i)=== null){
+    } else if(miCampo.length > 0 && miCampo.match(patronTexto)=== null){
         alert('El nombre debe tener solo letras');
     } else if (miCorreo.length === 0 || /^\s+$/.test(miCorreo)) {
         alert('El campo de correo esta vacio!');
@@ -29,32 +27,19 @@ function validar() {
     }else{
         $(document).ready(function () {
             $("#validateButton").click(function () {
-                $(this).hide();
+                $("#Contacto").load("Enlace.html");
             });
         });
 
         $(document).ready(function () {
             $("#validateButton").click(function () {
-                $("#Contacto").load("Enlace.html");
+                $(this).hide();
             });
         });
-    }
-}
 
+    }
+
+}
 var buttonValidation = document.getElementById('validateButton');
 
 buttonValidation.addEventListener('click', validar);
-
-
-/*
-$(document).ready(function () {
-    $("#validateButton").click(function () {
-        $(this).hide();
-    });
-});
-
-$(document).ready(function () {
-    $("#validateButton").click(function () {
-        $("#Contacto").load("Enlace.html");
-    });
-});*/
