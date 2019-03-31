@@ -23,7 +23,9 @@
  background-position: center;
 }
 
-
+.overlay{
+    margin-bottom: auto;
+}
 
 .description{
     position: absolute;
