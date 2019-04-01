@@ -1,14 +1,87 @@
-.navbar{ background:#424242;}
+/*barra de navegación - Inicio*/
 
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
 
-.nav-link{ margin-right: 1em !important;}
+.barra{
+    background: #024959;
+}
 
-.nav-link:hover{ background: #424242; color: #f97300; }
+.menu_bar{
+    display: none;
+}
 
-.navbar-collapse{ justify-content: flex-end;}
+.items_list{
+    overflow: hidden;
+    list-style: none;
+}
 
-.navbar-toggler{  background:#fff !important;}
+.items_list a{
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.items_list a:hover{
+    background: #037E8C;
+    text-decoration: none;
+    color: #fff;
+}
+
+.items_list span{
+    margin-right: 10px;
+}
+
+.items_nav{
+    float: left;
+}
+
+@media screen and (max-width:800px){
+
+    .barra{
+        width: 50%;
+        height: 100%;
+        left: -100%;
+        margin: 0 ;
+        position: fixed;
+    }
+
+    .menu_bar{
+        position: fixed;
+    }
+
+    .items_nav{
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255,255,255, .3);
+    }
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+
+    .menu_bar .boton_menu{
+        display: block;
+        padding: 20px;
+        background: #024959;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing:border-box ;
+        -moz-box-sizing:border-box ;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .menu_bar span{
+        float: right;
+        font-size: 40px;
+    }
+}
+
+/*barra de navegación - Fin*/
 
 .general{
     background-image: url('../Images/Fondo.jpg')
@@ -23,7 +96,9 @@
  background-position: center;
 }
 
-
+.overlay{
+    margin-bottom: auto;
+}
 
 .description{
     position: absolute;

@@ -4,6 +4,42 @@ $(document).ready(function () {
 })
 
 
+
+/**
+ *
+ *Ocultamiento o muestra del menu lateral cuando se observa en dispositivos moviles
+ *
+ *
+ */
+
+
+$(document).ready(func_navbar);
+
+var contador_navbar = 1;
+
+function func_navbar(){
+    $('.menu_bar').click(function(){
+
+        if(contador_navbar == 1){
+
+            contador_navbar = 0;
+
+            $('.barra').animate({
+                left: '0'
+            })
+        } else {
+
+            contador_navbar = 1;
+
+            $('.barra').animate({
+                left: '-100%'
+            })
+        }
+    });
+}
+
+
+
 /**
  *
  * Validación de los campos registrados por el usuario en los formularios.
