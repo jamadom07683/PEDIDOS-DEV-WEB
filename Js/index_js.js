@@ -4,19 +4,15 @@ $(document).ready(function () {
 })
 
 
-
-/**
- *
- *Ocultamiento o muestra del menu lateral cuando se observa en dispositivos moviles
- *
- *
- */
-
-
 $(document).ready(func_navbar);
 
 var contador_navbar = 1;
 
+/**
+ *
+ *Ocultamiento o muestra del menu lateral cuando se observa en dispositivos moviles.
+ *
+ */
 function func_navbar(){
     $('.menu_bar').click(function(){
 
@@ -39,11 +35,16 @@ function func_navbar(){
 }
 
 
-
 /**
  *
  * Validación de los campos registrados por el usuario en los formularios.
- * Al final de la validación muestra un mensaje que expresa que todo lo ingresado corresponde a la informacion que se pidio.
+ * Al final de la validación muestra un mensaje que expresa que todo lo ingresado corresponde a la información que se pidio.
+ *
+ * La función valida lo siguiente:
+ *  Que ningún campo este vacio.
+ *  Que el nombre solo contenga letras.
+ *  Que el correo sea un correo valido.
+ *  Que el teléfono contenga 7 o 10 dígitos.
  *
  */
 function validar() {
@@ -69,11 +70,12 @@ function validar() {
         alert('El mensaje esta vacio!');
     } else {
         document.getElementById('row').innerHTML = "Gracias por contactarnos, en pocos minutos nos comunicaremos.";
-        document.getElementById('row').style.color="blue";
-        document.getElementById('row').style.fontSize="40px";
+         document.getElementById('row').setAttribute('class','mensajegraci')
     }
 
 }
+
+
 var buttonValidation = document.getElementById('validateButton');
 
 buttonValidation.addEventListener('click', validar);

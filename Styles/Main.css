@@ -1,58 +1,58 @@
 /*barra de navegación - Inicio*/
 
 
-.barra{
+.barra {
     background: #024959;
 }
 
-.menu_bar{
+.menu_bar {
     display: none;
 }
 
-.items_list{
+.items_list {
     overflow: hidden;
     list-style: none;
 }
 
-.items_list a{
+.items_list a {
     color: #fff;
     padding: 20px;
     display: block;
     text-decoration: none;
 }
 
-.items_list a:hover{
+.items_list a:hover {
     background: #037E8C;
     text-decoration: none;
     color: #fff;
 }
 
-.items_list span{
+.items_list span {
     margin-right: 10px;
 }
 
-.items_nav{
+.items_nav {
     float: left;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
 
-    .barra{
+    .barra {
         width: 50%;
         height: 100%;
         left: -100%;
-        margin: 0 ;
+        margin: 0;
         position: fixed;
     }
 
-    .menu_bar{
+    .menu_bar {
         position: fixed;
     }
 
-    .items_nav{
+    .items_nav {
         display: block;
         float: none;
-        border-bottom: 1px solid rgba(255,255,255, .3);
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
     }
 
     .menu_bar {
@@ -61,7 +61,7 @@
         background: #ccc;
     }
 
-    .menu_bar .boton_menu{
+    .menu_bar .boton_menu {
         display: block;
         padding: 20px;
         background: #024959;
@@ -69,13 +69,13 @@
         text-decoration: none;
         font-weight: bold;
         font-size: 25px;
-        -webkit-box-sizing:border-box ;
-        -moz-box-sizing:border-box ;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
         cursor: pointer;
     }
 
-    .menu_bar span{
+    .menu_bar span {
         float: right;
         font-size: 40px;
     }
@@ -83,108 +83,116 @@
 
 /*barra de navegación - Fin*/
 
-.general{
+.general {
     background-image: url('../Images/Fondo.jpg')
 }
 
 /*encabezado*/
-.header{
- background-attachment: fixed;
- background-image: url('../Images/shopping2.jpg');
- background-attachment: fixed;
- background-size: cover;
- background-position: center;
+.header {
+    background-attachment: fixed;
+    background-image: url('../Images/shopping2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
-.overlay{
+.overlay {
     margin-bottom: auto;
 }
 
-.description{
+.description {
     position: absolute;
     top: 30%;
     margin: auto;
     padding: 2em;
 
 }
-.description h1{
- color:#F97300 ;
+
+.description h1 {
+    color: #151515;
 }
-.description p{
- color:#666;
- font-size: 20px;
- width: 50%;
- line-height: 1.5;
+
+.description p {
+    color: #666;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
 }
 
 /*Acerca De*/
 
-.AcercaDe{
-   background-color: black;
-    padding: 2em;
-    margin: 4em;
-    border-radius: 2em;
-    -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
-}
-
-.productos{
- position: relative;
+.AcercaDe {
     background-color: black;
     padding: 2em;
     margin: 4em;
     border-radius: 2em;
-    -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.productos {
+    position: relative;
+    background-color: black;
+    padding: 2em;
+    margin: 4em;
+    border-radius: 2em;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 
 
 }
-.productos h1{
- color:white:;
- margin: 2em;
+
+.productos h1 {
+    color: white:;
+    margin: 2em;
 }
-.productos .item{
- position: relative;
+
+.productos .item {
+    position: relative;
 }
-.productos .des{
- background: #616161;
- color: #fff;
- text-align: center;
+
+.productos .des {
+    background: #616161;
+    color: #fff;
+    text-align: center;
     border-bottom-left-radius: 50%;
     border-bottom-left-radius: 50%;
- transition:.3s ease-in-out;
+    transition: .3s ease-in-out;
 
 }
 
-.productos span{
+.productos span {
     color: black;
     font-weight: bold;
 }
 
 /*Equipo De Trabajo*/
 
-.about{
- margin: 4em;
- padding: 1em;
- position: relative;
+.about {
+    margin: 4em;
+    padding: 1em;
+    position: relative;
     background-color: black;
     border-radius: 2em;
-    -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 }
-.about h1{
- color:#F97300;
- margin: 2em;
+
+.about h1 {
+    color: #F97300;
+    margin: 2em;
 }
-.about img{
- height: 100%;
+
+.about img {
+    height: 100%;
     width: 100%;
     border-radius: 50%
 }
-.links{
+
+.links {
     color: rgb(17, 17, 17);
     /*display: flex;*/
     height: 51px;
@@ -193,22 +201,26 @@ box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
     border: 0px none rgb(17, 17, 17);
     font: normal normal 300 normal 23.1px / 31.5px "Scope One", serif;
 }
-.about span{
- display: block;
- color: #888;
- position: absolute;
- left: 115px;
+
+.about span {
+    display: block;
+    color: #888;
+    position: absolute;
+    left: 115px;
 }
-.about .desc{
- padding: 2em;
- border-left:4px solid #10828C;
+
+.about .desc {
+    padding: 2em;
+    border-left: 4px solid #10828C;
 }
-.about .desc h3{
- color: #10828C;
+
+.about .desc h3 {
+    color: #10828C;
 }
-.about .desc p{
- line-height:2;
- color:white;
+
+.about .desc p {
+    line-height: 2;
+    color: white;
 }
 
 
@@ -219,68 +231,71 @@ box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
     background-color: black;
     margin: 4em;
     border-radius: 2em;
-    -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 
 .floating-label-form-group {
-  position: relative;
-  border-bottom: 1px solid #e9ecef;
+    position: relative;
+    border-bottom: 1px solid #e9ecef;
 }
 
 .floating-label-form-group input,
 .floating-label-form-group textarea {
-  font-size: 1.5em;
-  position: relative;
-  z-index: 1;
-  padding-right: 0;
-  padding-left: 0;
-  resize: none;
-  border: none;
-  border-radius: 0;
-  background: none;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
+    font-size: 1.5em;
+    position: relative;
+    z-index: 1;
+    padding-right: 0;
+    padding-left: 0;
+    resize: none;
+    border: none;
+    border-radius: 0;
+    background: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .floating-label-form-group label {
-  font-size: 0.85em;
-  line-height: 1.764705882em;
-  position: relative;
-  z-index: 0;
-  top: 2em;
-  display: block;
-  margin: 0;
-  -webkit-transition: top 0.3s ease, opacity 0.3s ease;
-  transition: top 0.3s ease, opacity 0.3s ease;
-  vertical-align: middle;
-  vertical-align: baseline;
-  opacity: 0;
+    font-size: 0.85em;
+    line-height: 1.764705882em;
+    position: relative;
+    z-index: 0;
+    top: 2em;
+    display: block;
+    margin: 0;
+    -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+    transition: top 0.3s ease, opacity 0.3s ease;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
 }
 
 .floating-label-form-group:not(:first-child) {
-  padding-left: 14px;
-  border-left: 1px solid #e9ecef;
+    padding-left: 14px;
+    border-left: 1px solid #e9ecef;
 }
 
 .floating-label-form-group-with-value label {
-  top: 0;
-  opacity: 1;
+    top: 0;
+    opacity: 1;
 }
 
 .floating-label-form-group-with-focus label {
-  color: #18BC9C;
+    color: #18BC9C;
 }
 
 form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #e9ecef;
+    border-top: 1px solid #e9ecef;
 }
-.mensajegraci{
-    font-size: 50px;
-    /*font-family: cursive;*/
-    color: #10828C;
+
+.mensajegraci {
+    font-size: 38px;
+    text-align: center;
+    /*font-family: cursive;
+    color: #10828C;*/
+    color: #024959;
     font-weight: bolt;
 }
 
