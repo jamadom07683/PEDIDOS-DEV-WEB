@@ -69,6 +69,8 @@ function validar() {
         alert('El mensaje esta vacio!');
     } else {
         document.getElementById('row').innerHTML = "Gracias por contactarnos, en pocos minutos nos comunicaremos.";
+        document.getElementById('row').style.color="blue";
+        document.getElementById('row').style.fontSize="40px";
     }
 
 }
