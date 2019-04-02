@@ -8,7 +8,7 @@ $(document).ready(function () {
 $(document).ready(func_navbar);
 
 var contador_navbar = 1;
-=======
+
 /*Productos - Carro*/
 
 $(document).ready(procs);
