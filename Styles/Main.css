@@ -83,7 +83,8 @@
 
 /*barra de navegación - Fin*/
 
-.general {
+.general{
+
     background-image: url('../Images/Fondo.jpg')
 }
 
@@ -167,6 +168,7 @@
     color: black;
     font-weight: bold;
 }
+
 
 /*Equipo De Trabajo*/
 
