@@ -4,6 +4,23 @@ $(document).ready(function () {
 })
 
 
+/*Productos - Carro*/
+
+$(document).ready(procs);
+
+var con_proc = 0 ;
+/**
+ * Aumenta en uno el contador del carrito de compras cuando le da clic a algún producto
+ * @returns {boolean} Retorna falso cada vez que da clic para evitar que lo rediriga al inicio de la página.
+ */
+function procs(){
+    $('.img_pro').click(function(){
+        con_proc = con_proc + 1;
+        $("#items_count").text(con_proc);
+        return false;
+    })
+}
+
 
 /**
  *
