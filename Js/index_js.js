@@ -1,3 +1,6 @@
+/**
+ * Vuelve adpatativo el header
+ */
 $(document).ready(function () {
     $('.header').height($(window).height());
 
