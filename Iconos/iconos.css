@@ -54,3 +54,6 @@
 .icon-cancel-circle:before {
   content: "\ea0d";
 }
+.icon-user-check:before {
+    content: "\e975";
+}
