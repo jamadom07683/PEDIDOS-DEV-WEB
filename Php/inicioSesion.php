@@ -29,7 +29,7 @@
 
         <nav class="barra">
             <ul class="items_list">
-                <li class="items_nav"><a href="#"><span class="icon-home3"></span>Inicio</a></li>
+                <li class="items_nav"><a href="../index.html"><span class="icon-home3"></span>Inicio</a></li>
                 <li class="items_nav"><a href="#AcercaDe"><span class="icon-earth"></span>Acerca De</a></li>
                 <li class="items_nav"><a href="#Productos"><span class="icon-briefcase"></span>Productos</a></li>
                 <li class="items_nav"><a href="#about"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
