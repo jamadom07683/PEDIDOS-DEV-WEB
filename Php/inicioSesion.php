@@ -31,10 +31,10 @@
             <ul class="items_list">
 
                 <li class="items_nav"><a href="../index.html"><span class="fas fa-sign-in-alt"></span>Inicio</a></li>
-                <li class="items_nav"><a href="#AcercaDe"><span class="icon-earth"></span>Acerca De</a></li>
-                <li class="items_nav"><a href="#Productos"><span class="icon-briefcase"></span>Productos</a></li>
-                <li class="items_nav"><a href="#about"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
-                <li class="items_nav"><a href="#Contacto"><span class="icon-mail"></span>Contactenos</a></li>
+                <li class="items_nav"><a href="#AcercaDe"><span class="fas fa-sign-in-alt"></span>Acerca De</a></li>
+                <li class="items_nav"><a href="#Productos"><span class="fas fa-sign-in-alt"></span>Productos</a></li>
+                <li class="items_nav"><a href="#about"><span class="fas fa-sign-in-alt"></span>Equipo de Trabajo</a></li>
+                <li class="items_nav"><a href="#Contacto"><span class="fas fa-sign-in-alt"></span>Contactenos</a></li>
                 <li class="items_nav"><a href="../index.html"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count">0</span></a></li>
                 <li class="items-nav"><a href="#"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
             </ul>
