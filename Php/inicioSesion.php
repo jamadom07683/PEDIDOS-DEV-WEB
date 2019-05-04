@@ -58,18 +58,18 @@
     </div>
     -->
 
-    <div class="Contacto" id="Contacto">
+    <div class="Iniciar Sesión" id="Sesiom">
         <div class="container">
             <br>
             <br>
-            <h2 class="text-center text-uppercase text-white mb-4">Contactenos</h2>
+            <h2 class="text-center text-uppercase text-white mb-4">Iniciar Sesión </h2>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
                 <div class="col-lg-8 mx-auto">
-                    <form name="sentMessage" id="contactForm" name="novalidate">
+                    <form name="sentMessage" id="contactForm" name="novalidate" action="ingreso.php" method="post">
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Nombre</label>
+                                <label>Usuario</label>
 
                                 <h2 class="Nom_form">Nombre</h2><input class="form-control" type="text" id="name1" name="name1">
 
@@ -78,28 +78,13 @@
                         </div>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Correo Electronico</label>
+                                <label>Contraseña</label>
                                 <h2 class="Nom_form">Correo electronico</h2> <input class="form-control" type="email" id="correo" name="correo">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Numero Telefonico </label>
-                                <h2 class="Nom_form">Numero telefonico</h2> <input class="form-control" type="number" id="numer" name="numer">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Mensaje</label>
-                                <h2 class="Nom_form">Mensaje</h2> <textarea class="form-control" id="mensaje2" name="mensaje2"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-
                         <div class="form-group">
-                            <button type="button" class="btn btn-primary btn-xl" id="validateButton">Enviar</button>
+                            <button type="button" class="btn btn-primary btn-xl" id="validateButton">Ingresar</button>
                         </div>
                     </form>
                 </div>
