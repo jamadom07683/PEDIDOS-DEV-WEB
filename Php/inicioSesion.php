@@ -20,7 +20,7 @@
 <body>
 
 
-    
+
 
     <!-- Barra de Navegación - Inicio -->
 
@@ -32,12 +32,13 @@
 
         <nav class="barra">
             <ul class="items_list">
+
                 <li class="items_nav"><a href="#"><span class="icon-home3"></span>Inicio</a></li>
-                <li class="items_nav"><a href="#AcercaDe"><span class="icon-earth"></span>Acerca De</a></li>
-                <li class="items_nav"><a href="#Productos"><span class="icon-briefcase"></span>Productos</a></li>
-                <li class="items_nav"><a href="about"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
-                <li class="items_nav"><a href="#Contacto"><span class="icon-mail"></span>Contactenos</a></li>
-                <li class="items_nav"><a href="#header"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count">0</span></a></li>
+                <li class="items_nav"><a href="../index.html"><span class="icon-earth"></span>Acerca De</a></li>
+                <li class="items_nav"><a href="../index.html""><span class="icon-briefcase"></span>Productos</a></li>
+                <li class="items_nav"><a href="../index.html"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
+                <li class="items_nav"><a href="../index.html"><span class="icon-mail"></span>Contactenos</a></li>
+                <li class="items_nav"><a href="../index.html"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count">0</span></a></li>
 
             </ul>
         </nav>
@@ -49,6 +50,7 @@
 
     <div>
 
+        <br>
         <br>
 
         <h1> Iniciar Sesión </h1>
