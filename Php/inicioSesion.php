@@ -25,14 +25,6 @@
         <input type="text" placeholder="Usuario" name="usuario">
         <input type="password" placeholder="Contraseña" name="contraseña">
         <input type="submit" value="Ingresar">
-
-        <div class="control-group">
-            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Correo Electronico</label>
-                <h2 class="Nom_form">Correo electronico</h2> <input class="form-control" type="email" id="correo" name="correo">
-                <p class="help-block text-danger"></p>
-            </div>
-        </div>
     </form>
 
 
