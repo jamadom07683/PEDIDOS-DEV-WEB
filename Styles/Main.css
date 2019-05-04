@@ -304,3 +304,16 @@ form .row:first-child .floating-label-form-group {
 .Nom_form {
     color: white;
 }
+
+
+/*Inicio de Sesión*/
+
+.IniciarSesion{
+    background-color: black;
+    margin: 4em;
+    border-radius: 2em;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
