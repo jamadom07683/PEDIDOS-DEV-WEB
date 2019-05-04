@@ -17,10 +17,7 @@
 
 </head>
 
-<body class="general" >
-
-
-
+<body class="general">
 
     <!-- Barra de Navegación - Inicio -->
 
@@ -45,25 +42,21 @@
         </nav>
     </header>
 
-    <br>
-    <br>
-    <br>
+    <!-- Barra de Navegación - Fin -->
 
-    <div>
+    <section>
+        <div>
 
-        <br>
-        <br>
+            <h1> Iniciar Sesión </h1>
 
-        <h1> Iniciar Sesión </h1>
+            <form action="ingreso.php" method="post">
+                <input type="text" placeholder="Usuario" name="usuario">
+                <input type="password" placeholder="Contraseña" name="contraseña">
+                <input type="submit" value="Ingresar">
+            </form>
 
-        <form action="ingreso.php" method="post">
-            <input type="text" placeholder="Usuario" name="usuario">
-            <input type="password" placeholder="Contraseña" name="contraseña">
-            <input type="submit" value="Ingresar">
-        </form>
-
-    </div>
-
+        </div>
+    </section>
 
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
