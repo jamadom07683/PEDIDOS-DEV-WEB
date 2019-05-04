@@ -45,8 +45,7 @@
     <!-- Barra de Navegación - Fin -->
     <br>
     <br>
-    <br>
-    <div class="about" id="InicarSesion">
+    <div class="Sesion" id="InicarSesion">
         <div class="container">
             <br>
             <br>
