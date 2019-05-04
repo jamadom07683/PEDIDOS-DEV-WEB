@@ -43,22 +43,10 @@
     </header>
 
     <!-- Barra de Navegación - Fin -->
-
-    <!---
-    <div>
-
-        <h1> Iniciar Sesión </h1>
-
-        <form action="ingreso.php" method="post">
-            <input type="text" placeholder="Usuario" name="usuario">
-            <input type="password" placeholder="Contraseña" name="contraseña">
-            <input type="submit" value="Ingresar">
-        </form>
-
-    </div>
-    -->
-
-    <div class="IniciarSesion" id="InicarSesion">
+    <br>
+    <br>
+    <br>
+    <div class="about" id="InicarSesion">
         <div class="container">
             <br>
             <br>
@@ -90,6 +78,8 @@
             </div>
         </div>
     </div>
+
+
 
     <footer>
         <p class="pie">PEDIDOS DEV WEB</p>
