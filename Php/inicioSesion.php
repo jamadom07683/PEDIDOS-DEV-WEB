@@ -58,7 +58,7 @@
     </div>
     -->
 
-    <div class="Contacto" id="InicarSesion">
+    <div class="IniciarSesion" id="InicarSesion">
         <div class="container">
             <br>
             <br>
@@ -71,19 +71,19 @@
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Usuario</label>
 
-                                <h2 class="Nom_form">Usuario</h2><input class="form-control" type="text" id="name1" name="name1">
+                                <h2 class="Nom_form">Usuario</h2><input class="form-control" type="text" id="" name="usuario">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Contraseña</label>
-                                <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="email" id="correo" name="correo">
+                                <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="" name="contraseña">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="form-group">
-                            <button type="button" class="btn btn-primary btn-xl" id="validateButton">Ingresar</button>
+                            <input type="submit"  class="btn btn-primary btn-xl" value="Ingresar">
                         </div>
                     </form>
                 </div>
