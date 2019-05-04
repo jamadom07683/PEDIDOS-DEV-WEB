@@ -38,7 +38,6 @@
                 <li class="items_nav"><a href="../index.html"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
                 <li class="items_nav"><a href="../index.html"><span class="icon-mail"></span>Contactenos</a></li>
                 <li class="items_nav"><a href="../index.html"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count">0</span></a></li>
-                <li class="items-nav"><a href="Php/inicioSesion.php"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a>></li>
 
             </ul>
         </nav>
@@ -50,7 +49,6 @@
     <br>
     <div>
 
-        <br>
         <br>
 
         <h1> Iniciar Sesión </h1>
