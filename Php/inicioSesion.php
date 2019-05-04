@@ -19,6 +19,33 @@
 
 <body>
 
+
+    
+=======
+    <!-- Barra de Navegación - Inicio -->
+
+    <header class="nav_bar fixed-top">
+
+        <div class="menu_bar">
+            <p href="#" class="boton_menu"><span class="icon-menu"></span>Menu</p>
+        </div>
+
+        <nav class="barra">
+            <ul class="items_list">
+                <li class="items_nav"><a href="../index.html"><span class="icon-home3"></span>Inicio</a></li>
+                <li class="items_nav"><a href="../index.html/#AcercaDe"><span class="icon-earth"></span>Acerca De</a></li>
+                <li class="items_nav"><a href="#Productos"><span class="icon-briefcase"></span>Productos</a></li>
+                <li class="items_nav"><a href="#about"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
+                <li class="items_nav"><a href="#Contacto"><span class="icon-mail"></span>Contactenos</a></li>
+                <li class="items_nav"><a href="#header"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count">0</span></a></li>
+                <li class="items-nav"><a href="Php/inicioSesion.php"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a>></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
     <div>
         <h1> Iniciar Sesión </h1>
 
@@ -29,6 +56,7 @@
         </form>
 
     </div>
+
 
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
