@@ -58,7 +58,7 @@
     </div>
     -->
 
-    <div class="IniciarSesion" id="IniciarSesion">
+    <div class="IniciarSesion" id="Contacto">
         <div class="container">
             <br>
             <br>
@@ -71,8 +71,7 @@
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Usuario</label>
 
-                                <h2 class="Nom_form">Usuaroi</h2><input class="form-control" type="text" id="name1" name="name1">
-
+                                <h2 class="Nom_form">Usuario</h2><input class="form-control" type="text" id="name1" name="name1">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
