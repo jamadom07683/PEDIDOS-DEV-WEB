@@ -24,13 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/*
 .icon-envelope:before {
   content: "\e900";
 }
 .icon-mail:before {
-  content: "\e900";
-}
-.icon-email:before {
   content: "\e900";
 }
 .icon-contact:before {
@@ -57,3 +56,5 @@
 .icon-user-check:before {
     content: "\e975";
 }
+
+*/
