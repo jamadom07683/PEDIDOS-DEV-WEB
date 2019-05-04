@@ -21,7 +21,7 @@
 
 
     
-=======
+
     <!-- Barra de Navegación - Inicio -->
 
     <header class="nav_bar fixed-top">
