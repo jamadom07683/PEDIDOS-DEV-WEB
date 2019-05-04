@@ -46,7 +46,13 @@
 
     <br>
     <br>
+    <br>
+    <br>
     <div>
+
+        <br>
+        <br>
+
         <h1> Iniciar Sesión </h1>
 
         <form action="ingreso.php" method="post">
