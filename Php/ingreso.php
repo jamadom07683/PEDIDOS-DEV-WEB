@@ -44,7 +44,7 @@
                 echo "Ha ingresado al sistema: ";
                 echo $_SESSION['usser'];
                 $nom = $_SESSION['usser'];
-                echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>'
+                echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>';
             }
             else{
                 echo "Contraseña invalida" ;
