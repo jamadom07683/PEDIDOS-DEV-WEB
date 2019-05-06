@@ -46,6 +46,7 @@
             }
             else{
                 echo "Contraseña invalida" ;
+                echo '<script language="javascript">alert("Contraseña invalida");</script>';
             }
         }
         else{
