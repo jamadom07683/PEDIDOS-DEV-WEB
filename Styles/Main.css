@@ -146,8 +146,6 @@
     -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
-
-
 }
 
 .Productos h1 {
@@ -248,6 +246,8 @@
     margin: 2em;
 }
 
+
+
 .floating-label-form-group {
     position: relative;
     border-bottom: 1px solid #e9ecef;
@@ -329,5 +329,9 @@ form .row:first-child .floating-label-form-group {
 
 .Sesion h1{
     color: #F97300;
+    margin: 2em;
+}
+
+.container{
     margin: 2em;
 }
