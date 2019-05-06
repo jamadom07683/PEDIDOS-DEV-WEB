@@ -43,9 +43,8 @@
                 $_SESSION['pass'] = $_POST['contraseña'];
                 echo "Ha ingresado al sistema: ";
                 echo $_SESSION['usser'];
-                $_SESSION['usser'] = $nom;
-                echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>';
-
+                $nom = $_SESSION['usser'];
+                echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>'
             }
             else{
                 echo "Contraseña invalida" ;
