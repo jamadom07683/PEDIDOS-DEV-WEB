@@ -44,7 +44,7 @@
                 echo "Ha ingresado al sistema: ";
                 echo $_SESSION['usser'];
                 $_SESSION['usser']=$nom;
-                echo '<script language="javascript">alert("Ha ingresado al sistema: $_SESSION['usser']");</script>';
+                echo '<script language="javascript">alert("Ha ingresado al sistema: $nom");</script>';
 
             }
             else{
