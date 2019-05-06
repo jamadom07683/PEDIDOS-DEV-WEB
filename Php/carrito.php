@@ -45,7 +45,10 @@
     <!-- Barra de Navegación - Fin -->
     <br>
     <br>
-
+    <br>
+    <br>
+    <br>
+    <br>
     <?php
      session_start();
     // Se crea un arreglo de identificador el nombre del usuario y como valor la contraseña
