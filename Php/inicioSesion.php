@@ -52,7 +52,7 @@
             <hr class="star-dark mb-5">
             <div class="row" id="row">
                 <div class="col-lg-8 mx-auto">
-                    <form name="sentMessage" id="contactForm" name="novalidate" action="#" method="post">
+                    <form name="sentMessage" id="contactForm" name="novalidate"  method="post">
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Usuario</label>
