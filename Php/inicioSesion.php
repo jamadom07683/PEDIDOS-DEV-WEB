@@ -79,7 +79,6 @@
 
 
     <?php
-     session_start();
     // Se crea un arreglo de identificador el nombre del usuario y como valor la contraseña
     $ingreso = array(
     //Para agregar usuarios: nombre_usuario => contraseña
