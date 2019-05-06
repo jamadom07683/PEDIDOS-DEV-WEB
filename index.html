@@ -58,29 +58,31 @@
     </header>
 
 
-    <div class="AcercaDe" id="AcercaDe">
+    <div class="AcercaDe text-center" id="AcercaDe">
         <div class="container">
             <h1 class="text-center text-uppercase text-white ">¿Que hacemos?</h1>
-            <br>
-            <p class="text-white-50">Somos tu solucion, para no aburrirte mientras pasas por acá, este es un breve resumen: </p>
-            <p class="text-white-50">Somos una tienda online de productos de oficina y aseo.</p>
-            <p class="text-white-50">Pero no cualquier tienda, una en la que puedas pedir tus cosas sin mayor esfuerzo y las tengas en tu poder sin salir de tu sitio de trabajo</p>
-            <p class="text-white-50">Somos como tú.</p>
-            <p class="text-white-50">Somos personas que nos encanta nuestro trabajo y haremos todo lo posible para que el tuyo mejore y tu experiencia con nosotros sea cada vez mejor.</p>
-            <p class="text-white-50">¿Como hacemos todo esto?</p>
-            <p class="text-white-50">A traves de nuestro portal vas a tener una lista de productos disponibles para la compra, es decir, un catalogo, vas a poder seleccionar dicho producto, agregarlo a la canasta y poder agregar demas productos de la misma manera, en caso contrario, solo tendras que ingresar los datos de envio y completar el proceso de facturacion, nuestros empleados estaran encantados de llevar tu orden</p>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="text-white-50">Somos tu solucion, para no aburrirte mientras pasas por acá, este es un breve resumen: </p>
+                    <p class="text-white-50">Somos una tienda online de productos de oficina y aseo.</p>
+                    <p class="text-white-50">Pero no cualquier tienda, una en la que puedas pedir tus cosas sin mayor esfuerzo y las tengas en tu poder sin salir de tu sitio de trabajo</p>
+                    <p class="text-white-50">Somos como tú.</p>
+                    <p class="text-white-50">Somos personas que nos encanta nuestro trabajo y haremos todo lo posible para que el tuyo mejore y tu experiencia con nosotros sea cada vez mejor.</p>
+                    <p class="text-white-50">¿Como hacemos todo esto?</p>
+                    <p class="text-white-50">A traves de nuestro portal vas a tener una lista de productos disponibles para la compra, es decir, un catalogo, vas a poder seleccionar dicho producto, agregarlo a la canasta y poder agregar demas productos de la misma manera, en caso contrario, solo tendras que ingresar los datos de envio y completar el proceso de facturacion, nuestros empleados estaran encantados de llevar tu orden</p>
+                </div>
+            </div>
         </div>
     </div>
-
 
 
     <!-- Productos -->
     <div class="Productos" id="Productos">
         <div class="container">
+            <h1 class="text-center text-uppercase text-white mb-4">Productos</h1>
             <div>
                 <?php echo $sHTML; ?>
             </div>
-            <h1 class="text-center text-uppercase text-white mb-4">Productos</h1>
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
                     <a class="img_pro des_pal" href="#"><img src="Images/destructora-de-papel.jpg" class="img-fluid"></a>
@@ -219,46 +221,48 @@
     <!-- Contactenos -->
     <div class="Contacto" id="Contacto">
         <div class="container">
-            <h1 class="text-center text-uppercase text-white mb-4">Contactenos</h1>
-            <hr class="star-dark mb-5">
-            <div class="row" id="row">
-                <div class="col-lg-8 mx-auto">
-                    <form name="sentMessage" id="contactForm" name="novalidate">
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Nombre</label>
+            <h2 class="text-center text-uppercase text-white mb-4">Contactenos</h2>
+            <div class="row">
+                <hr class="star-dark mb-5">
+                <div class="row" id="row">
+                    <div class="col-lg-8 mx-auto">
+                        <form name="sentMessage" id="contactForm" name="novalidate">
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Nombre</label>
 
-                                <h2 class="Nom_form">Nombre</h2><input class="form-control" type="text" id="name1" name="name1">
+                                    <h2 class="Nom_form">Nombre</h2><input class="form-control" type="text" id="name1" name="name1">
 
-                                <p class="help-block text-danger"></p>
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Correo Electronico</label>
-                                <h2 class="Nom_form">Correo electronico</h2> <input class="form-control" type="email" id="correo" name="correo">
-                                <p class="help-block text-danger"></p>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Correo Electronico</label>
+                                    <h2 class="Nom_form">Correo electronico</h2> <input class="form-control" type="email" id="correo" name="correo">
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Numero Telefonico </label>
-                                <h2 class="Nom_form">Numero telefonico</h2> <input class="form-control" type="number" id="numer" name="numer">
-                                <p class="help-block text-danger"></p>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Numero Telefonico </label>
+                                    <h2 class="Nom_form">Numero telefonico</h2> <input class="form-control" type="number" id="numer" name="numer">
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Mensaje</label>
-                                <h2 class="Nom_form">Mensaje</h2> <textarea class="form-control" id="mensaje2" name="mensaje2"></textarea>
-                                <p class="help-block text-danger"></p>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Mensaje</label>
+                                    <h2 class="Nom_form">Mensaje</h2> <textarea class="form-control" id="mensaje2" name="mensaje2"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <button type="button" class="btn btn-primary btn-xl" id="validateButton">Enviar</button>
-                        </div>
-                    </form>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn-xl" id="validateButton">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
