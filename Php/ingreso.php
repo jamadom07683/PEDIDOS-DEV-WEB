@@ -42,6 +42,7 @@
                 $_SESSION['usser'] = $_POST['usuario'] ;
                 $_SESSION['pass'] = $_POST['contraseña'];
                 echo "Ha ingresado al sistema: ";
+                echo '<script language="javascript">alert("Ha ingresado al sistema:" SESSION['usser']);</script>';
                 echo $_SESSION['usser'];
             }
             else{
@@ -51,10 +52,12 @@
         }
         else{
             echo "Usuario invalido";
+            echo '<script language="javascript">alert("Usuario invalido");</script>';
         }
     }
     else{
         echo  "Ingrese todos los datos" ;
+        echo '<script language="javascript">alert("Ingrese todos los datos");</script>';
     }
     ?>
 
