@@ -55,13 +55,15 @@
             <hr class="star-dark mb-5">
             <div class="row" id="row">
                 <ul>
-                    <li><a href="test.php?nombre=zapato&precio=32">Zapato</a></li>
-                    <li><a href="test.php?nombre=vino&precio=10">Vino.</a></li>
-                    <li><a href="test.php?nombre=curso&precio=30">Curso online</a></li>
-                    <li><a href="test.php?nombre=reloj&precio=400">Reloj</a></li>
-                    <li><a href="test.php?nombre=gafas&precio=20">Gafas</a></li>
-                    <li><a href="test.php?nombre=ordenador&precio=500">Ordenador</a></li>
-                    <li><a href="test.php?vaciar=1">vaciar carrito</a></li>
+                    <li><a href="test.php?nombre=zapato&precio=32">Destructora de papel</a></li>
+                    <li><a href="test.php?nombre=vino&precio=10">Legajador</a></li>
+                    <li><a href="test.php?nombre=curso&precio=30">Computadora</a></li>
+                    <li><a href="test.php?nombre=reloj&precio=400">Papel tamaño carta</a></li>
+                    <li><a href="test.php?nombre=gafas&precio=20">100 Boligrafos</a></li>
+                    <li><a href="test.php?nombre=ordenador&precio=500">Block 80 hojas</a></li>
+                    <li><a href="test.php?nombre=libro&precio=500">Libro</a></li>
+                    <li><a href="test.php?nombre=organizador&precio=500">Organizador</a></li>
+                    <li><a href="test.php?vaciar=1">Vaciar carrito</a></li>
                 </ul>
             </div>
 
