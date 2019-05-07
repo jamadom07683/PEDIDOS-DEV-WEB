@@ -95,7 +95,8 @@
                     $nom = $_SESSION['usser'];
                     //echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>';
                     //header("Location:carrito.php");
-                    <meta http-equiv="refresh" content="5;URL=carrito.php" />
+                    //<meta http-equiv="refresh" content="5;URL=carrito.php" />
+                    '<META HTTP-EQUIV="Refresh" CONTENT="4;URL=carrito.php'. $i.'">';
                 }
                 else{
                     echo "Contraseña invalida" ;
