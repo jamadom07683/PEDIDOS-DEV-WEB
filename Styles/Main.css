@@ -308,7 +308,7 @@ form .row:first-child .floating-label-form-group {
     color: #10828C;*/
     color: #024959;
     font-weight: bolt;
-    margin: 2em;
+    margin: 1em;
 }
 
 .Nom_form {
@@ -352,5 +352,5 @@ form .row:first-child .floating-label-form-group {
     text-align: center;
     font-size: 38px;
     color: #024959;
-    margin: 2em;
+    margin: 1em;
 }

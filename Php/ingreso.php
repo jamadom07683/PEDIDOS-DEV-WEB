@@ -57,6 +57,12 @@
                 <div class="col-lg-8 mx-auto">
                     <p> <?php ingresar() ?></p>
                 </div>
+
+                <div class="form-group">
+                    <form>
+                        <input type="button" value="Volver" class="btn btn-primary btn-xl" onclick="history.back()">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
