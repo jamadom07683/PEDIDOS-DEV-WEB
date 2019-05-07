@@ -56,9 +56,22 @@
 .icon-user-check:before {
     content: "\e975";
 }
+
+
+.icon-cart:before {
+    content: "\e93a";
+}
+.icon-user:before {
+    content: "\e971";
+}
+
+/*
+
 .fas fa-shopping-cart:before {
     content: "\e900";
 }
 .fas fa-sign-in-alt{
     content: "\e900";
 }
+
+*/
