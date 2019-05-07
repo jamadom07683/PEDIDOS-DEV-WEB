@@ -51,7 +51,7 @@
         <div class="container">
             <br>
             <br>
-            <h2 class="text-center text-uppercase text-white mb-4"> Ingreso </h2>
+            <h1 class="text-center text-uppercase text-white mb-4"> Ingreso </h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
                 <div class="col-lg-8 mx-auto">
@@ -93,17 +93,17 @@
                     header("Location:carrito.php");
                 }
                 else{
-                    echo "<h1> Contraseña invalida </h1>" ;
+                    echo "Contraseña invalida" ;
                     echo '<script language="javascript">alert("Contraseña invalida");</script>';
                 }
             }
             else{
-                echo "<h1> Usuario invalido </h1>";
+                echo "Usuario invalido";
                 echo '<script language="javascript">alert("Usuario invalido");</script>';
             }
         }
         else{
-            echo  "Ingrese todos los datos" ;
+            echo "Ingrese todos los datos" ;
             echo '<script language="javascript">alert("Ingrese todos los datos");</script>';
         }
     }

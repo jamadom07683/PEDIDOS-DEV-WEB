@@ -308,6 +308,7 @@ form .row:first-child .floating-label-form-group {
     color: #10828C;*/
     color: #024959;
     font-weight: bolt;
+    margin: 2em;
 }
 
 .Nom_form {
@@ -344,4 +345,12 @@ form .row:first-child .floating-label-form-group {
     -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.Ingreso p{
+    text-align: center;
+    font-size: 38px;
+    color: #024959;
+    margin: 2em;
 }

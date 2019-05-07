@@ -44,11 +44,9 @@
     <!-- Barra de Navegación - Fin -->
     <br>
     <br>
-    <div class="AcercaDe" id="InicarSesion">
+    <div class="Sesion" id="Sesion">
         <div class="container">
-            <br>
-            <br>
-            <h2 class="text-center text-uppercase text-white mb-4">Iniciar Sesión </h2>
+            <h1 class="text-center text-uppercase text-white mb-4">Iniciar Sesión </h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
                 <div class="col-lg-8 mx-auto">
