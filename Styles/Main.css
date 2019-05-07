@@ -147,6 +147,17 @@
     -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 }
+.carrito{
+    position: relative;
+    background-color: black;
+    padding: 2em;
+    margin: 4em;
+    border-radius: 2em;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+
+}
 
 .Productos h1 {
     color: white:;
