@@ -53,16 +53,14 @@
             <br>
             <h1 class="text-center text-uppercase text-white mb-4"> Ingreso </h1>
             <hr class="star-dark mb-5">
-
-            <div class="row" id="row">
-                <div class="col-lg-8 mx-auto">
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
                     <p> <?php ingresar() ?></p>
                     <p class="help-block text-danger"></p>
                 </div>
-
-                <div class="form-group">
-                    <input type="button" value="Volver" class="btn btn-primary btn-xl" onclick="history.back()">
-                </div>
+            </div>
+            <div class="form-group">
+                <input type="button" value="Volver" class="btn btn-primary btn-xl" onclick="history.back()">
             </div>
         </div>
     </div>
