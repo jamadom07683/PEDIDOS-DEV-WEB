@@ -46,9 +46,23 @@
     <br>
     <br>
     <br>
-    <h1>
 
-    </h1>
+    <div class="Ingreso" id="Ingreso">
+        <div class="container">
+            <br>
+            <br>
+            <h2 class="text-center text-uppercase text-white mb-4">Iniciar Sesión </h2>
+            <hr class="star-dark mb-5">
+            <div class="row" id="row">
+                <div class="col-lg-8 mx-auto">
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <?php
      session_start();
     // Se crea un arreglo de identificador el nombre del usuario y como valor la contraseña
@@ -87,7 +101,7 @@
         }
     }
     else{
-        echo  "<h1> Ingrese todos los datos <h1> " ;
+        echo  "<p> Ingrese todos los datos <p> " ;
         echo '<script language="javascript">alert("Ingrese todos los datos");</script>';
     }
     ?>
