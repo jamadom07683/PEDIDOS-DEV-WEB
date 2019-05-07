@@ -90,13 +90,11 @@
                     //Creamos el "usuario" por medio de las sesiones
                     $_SESSION['usser'] = $_POST['usuario'] ;
                     $_SESSION['pass'] = $_POST['contraseña'];
-                    echo "<h1> Ha ingresado al sistema </h1> ";
-                    echo $_SESSION['usser'];
                     $nom = $_SESSION['usser'];
+                    echo "<h1> Ha ingresado el usuario '.$nom.'  al sistema </h1> ";
                     //echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>';
                     //header("Location:carrito.php");
-                    //<meta http-equiv="refresh" content="5;URL=carrito.php" />
-                    '<META HTTP-EQUIV="Refresh" CONTENT="4;URL=carrito.php'. $i.'">';
+                    '<meta http-equiv="refresh" content="5;URL=carrito.php" /> ';
                 }
                 else{
                     echo "Contraseña invalida" ;
