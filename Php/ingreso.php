@@ -51,11 +51,11 @@
         <div class="container">
             <br>
             <br>
-            <h2 class="text-center text-uppercase text-white mb-4">Iniciar Sesión </h2>
+            <h2 class="text-center text-uppercase text-white mb-4"> Ingreso </h2>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
                 <div class="col-lg-8 mx-auto">
-                    <p> </p>
+                    <p> <?php ingresar() ?></p>
                 </div>
             </div>
         </div>
@@ -63,46 +63,49 @@
 
 
 
+
     <?php
-     session_start();
-    // Se crea un arreglo de identificador el nombre del usuario y como valor la contraseña
-    $ingreso = array(
-    //Para agregar usuarios: nombre_usuario => contraseña
-    "Omar" => "crack",
-    "Santiago" => "1234" ,
-    "Michael" => "1234",
-    "admin" => "admin",
-    );
-    //Volvemos el arreglo de ingreso una sesion para utilizarla en otra pagina
-    $_SESSION['ingreso'] = $ingreso;
-    //Si el cliente ingreso algun valor en los dos campos
-    if ($_POST['usuario'] && $_POST['contraseña']){
-        //Si el usuario esta guardado en al arreglo de ingress
-        if (isset($ingreso[$_POST['usuario']])){
-            //Si la contraseña dada coincide con la contraseña del arreglo
-            if ($_POST['contraseña'] == $ingreso[$_POST['usuario']]){
-                //Creamos el "usuario" por medio de las sesiones
-                $_SESSION['usser'] = $_POST['usuario'] ;
-                $_SESSION['pass'] = $_POST['contraseña'];
-                echo "<h1> Ha ingresado al sistema </h1> ";
-                echo $_SESSION['usser'];
-                $nom = $_SESSION['usser'];
-                echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>';
-                header("Location:carrito.php");
+    function ingresar(){
+        session_start();
+        // Se crea un arreglo de identificador el nombre del usuario y como valor la contraseña
+        $ingreso = array(
+        //Para agregar usuarios: nombre_usuario => contraseña
+        "Omar" => "crack",
+        "Santiago" => "1234" ,
+        "Michael" => "1234",
+        "admin" => "admin",
+        );
+        //Volvemos el arreglo de ingreso una sesion para utilizarla en otra pagina
+        $_SESSION['ingreso'] = $ingreso;
+        //Si el cliente ingreso algun valor en los dos campos
+        if ($_POST['usuario'] && $_POST['contraseña']){
+            //Si el usuario esta guardado en al arreglo de ingress
+            if (isset($ingreso[$_POST['usuario']])){
+                //Si la contraseña dada coincide con la contraseña del arreglo
+                if ($_POST['contraseña'] == $ingreso[$_POST['usuario']]){
+                    //Creamos el "usuario" por medio de las sesiones
+                    $_SESSION['usser'] = $_POST['usuario'] ;
+                    $_SESSION['pass'] = $_POST['contraseña'];
+                    echo "<h1> Ha ingresado al sistema </h1> ";
+                    echo $_SESSION['usser'];
+                    $nom = $_SESSION['usser'];
+                    echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>';
+                    header("Location:carrito.php");
+                }
+                else{
+                    echo "<h1> Contraseña invalida </h1>" ;
+                    echo '<script language="javascript">alert("Contraseña invalida");</script>';
+                }
             }
             else{
-                echo "<h1> Contraseña invalida </h1>" ;
-                echo '<script language="javascript">alert("Contraseña invalida");</script>';
+                echo "<h1> Usuario invalido </h1>";
+                echo '<script language="javascript">alert("Usuario invalido");</script>';
             }
         }
         else{
-            echo "<h1> Usuario invalido </h1>";
-            echo '<script language="javascript">alert("Usuario invalido");</script>';
+            echo  "Ingrese todos los datos" ;
+            echo '<script language="javascript">alert("Ingrese todos los datos");</script>';
         }
-    }
-    else{
-        echo  "<p> Ingrese todos los datos <p> " ;
-        echo '<script language="javascript">alert("Ingrese todos los datos");</script>';
     }
     ?>
 
