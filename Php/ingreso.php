@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="Iconos/iconos.css">
+    <link rel="stylesheet" href="../Iconos/iconos.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -37,7 +37,7 @@
                 <li class="items_nav"><a href="../index.html#About"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
                 <li class="items_nav"><a href="../index.html#Contacto"><span class="icon-mail"></span>Contactenos</a></li>
                 <li class="items_nav"><a href="../index.html"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count">0</span></a></li>
-                <li class="items-nav"><a href="#"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
+                <li class="items-nav"><a href="../Php/inicioSesion.php"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
             </ul>
         </nav>
     </header>
