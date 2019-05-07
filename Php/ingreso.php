@@ -53,6 +53,16 @@
             <br>
             <h1 class="text-center text-uppercase text-white mb-4"> Ingreso </h1>
             <hr class="star-dark mb-5">
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    <label>Contraseña</label>
+                    <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="" name="contraseña">
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-xl" value="Ingresar">
+            </div>
             <div class="row" id="row">
                 <div class="col-lg-8 mx-auto">
                     <p> <?php ingresar() ?></p>
