@@ -49,52 +49,7 @@
     <br>
     <br>
     <br>
-    <?php
-     session_start();
-    // Se crea un arreglo de identificador el nombre del usuario y como valor la contraseña
-    $ingreso = array(
-    //Para agregar usuarios: nombre_usuario => contraseña
-    "Omar" => "crack",
-    "Santiago" => "1234" ,
-    "Michael" => "1234",
-    "admin" => "admin",
-    );
-    //Volvemos el arreglo de ingreso una sesion para utilizarla en otra pagina
-    $_SESSION['ingreso'] = $ingreso;
-    //Si el cliente ingreso algun valor en los dos campos
-    if ($_POST['usuario'] && $_POST['contraseña']){
-        //Si el usuario esta guardado en al arreglo de ingress
-        if (isset($ingreso[$_POST['usuario']])){
-            //Si la contraseña dada coincide con la contraseña del arreglo
-            if ($_POST['contraseña'] == $ingreso[$_POST['usuario']]){
-                //Creamos el "usuario" por medio de las sesiones
-                $_SESSION['usser'] = $_POST['usuario'] ;
-                $_SESSION['pass'] = $_POST['contraseña'];
-                echo "Ha ingresado al sistema: ";
-                echo $_SESSION['usser'];
-                $nom = $_SESSION['usser'];
-                echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>';
-            }
-            else{
-                echo "Contraseña invalida" ;
-                echo '<script language="javascript">alert("Contraseña invalida");</script>';
-            }
-        }
-        else{
-            echo "Usuario invalido";
-            echo '<script language="javascript">alert("Usuario invalido");</script>';
-        }
-    }
-    else{
-        echo  "Ingrese todos los datos" ;
-        echo '<script language="javascript">alert("Ingrese todos los datos");</script>';
-    }
-    ?>
 
-    <section>
-        <br>
-        <a href="inicioSesion.php">Volver</a>
-    </section>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
