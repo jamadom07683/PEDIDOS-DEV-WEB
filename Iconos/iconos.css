@@ -56,4 +56,9 @@
 .icon-user-check:before {
     content: "\e975";
 }
-
+.fas fa-shopping-cart:before {
+    content: "\e900";
+}
+.fas fa-sign-in-alt{
+    content: "\e900";
+}
