@@ -49,12 +49,20 @@
     <br>
     <br>
     <br>
-    <div class="carrito" id="carrito">
+    <div class="Sesion" id="Sesion">
        <div class="container">
           <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
-
+                <ul>
+                    <li><a href="test.php?nombre=zapato&precio=32">Zapato</a></li>
+                    <li><a href="test.php?nombre=vino&precio=10">Vino.</a></li>
+                    <li><a href="test.php?nombre=curso&precio=30">Curso online</a></li>
+                    <li><a href="test.php?nombre=reloj&precio=400">Reloj</a></li>
+                    <li><a href="test.php?nombre=gafas&precio=20">Gafas</a></li>
+                    <li><a href="test.php?nombre=ordenador&precio=500">Ordenador</a></li>
+                    <li><a href="test.php?vaciar=1">vaciar carrito</a></li>
+                </ul>
             </div>
 
        </div>
