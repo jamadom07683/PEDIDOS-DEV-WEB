@@ -49,6 +49,17 @@
     <br>
     <br>
     <br>
+    <div class="carrito" id="carrito">
+       <div class="container">
+          <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
+            <hr class="star-dark mb-5">
+            <div class="row" id="row">
+
+            </div>
+
+       </div>
+
+    </div>
 
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
