@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?yuhh9p');
-  src:  url('fonts/icomoon.eot?yuhh9p#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?yuhh9p') format('truetype'),
-    url('fonts/icomoon.woff?yuhh9p') format('woff'),
-    url('fonts/icomoon.svg?yuhh9p#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?p2ptf0');
+  src:  url('fonts/icomoon.eot?p2ptf0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?p2ptf0') format('truetype'),
+    url('fonts/icomoon.woff?p2ptf0') format('woff'),
+    url('fonts/icomoon.svg?p2ptf0#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,14 +24,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+.icon-envelope:before {
+  content: "\e900";
+}
+.icon-mail:before {
+  content: "\e900";
+}
+.icon-contact:before {
+  content: "\e900";
+}
 .icon-home3:before {
   content: "\e902";
-}
-.icon-cart:before {
-  content: "\e93a";
-}
-.icon-user:before {
-  content: "\e971";
 }
 .icon-rocket:before {
   content: "\e9a5";
@@ -45,6 +50,28 @@
 .icon-earth:before {
   content: "\e9ca";
 }
-.icon-mail:before {
-  content: "\ea85";
+.icon-cancel-circle:before {
+  content: "\ea0d";
 }
+.icon-user-check:before {
+    content: "\e975";
+}
+
+
+.icon-cart:before {
+    content: "\e93a";
+}
+.icon-user:before {
+    content: "\e971";
+}
+
+/*
+
+.fas fa-shopping-cart:before {
+    content: "\e900";
+}
+.fas fa-sign-in-alt{
+    content: "\e900";
+}
+
+*/
