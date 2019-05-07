@@ -53,25 +53,15 @@
             <br>
             <h1 class="text-center text-uppercase text-white mb-4"> Ingreso </h1>
             <hr class="star-dark mb-5">
-            <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                    <label>Contraseña</label>
-                    <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="" name="contraseña">
-                    <p class="help-block text-danger"></p>
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-xl" value="Ingresar">
-            </div>
+
             <div class="row" id="row">
                 <div class="col-lg-8 mx-auto">
                     <p> <?php ingresar() ?></p>
+                    <p class="help-block text-danger"></p>
                 </div>
 
                 <div class="form-group">
-                    <form>
-                        <input type="button" value="Volver" class="btn btn-primary btn-xl" onclick="history.back()">
-                    </form>
+                    <input type="button" value="Volver" class="btn btn-primary btn-xl" onclick="history.back()">
                 </div>
             </div>
         </div>
@@ -105,22 +95,22 @@
                     echo "<h1> Ha ingresado al sistema </h1> ";
                     echo $_SESSION['usser'];
                     $nom = $_SESSION['usser'];
-                    echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>';
+                    //echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>';
                     header("Location:carrito.php");
                 }
                 else{
                     echo "Contraseña invalida" ;
-                    echo '<script language="javascript">alert("Contraseña invalida");</script>';
+                    //echo '<script language="javascript">alert("Contraseña invalida");</script>';
                 }
             }
             else{
                 echo "Usuario invalido";
-                echo '<script language="javascript">alert("Usuario invalido");</script>';
+                //echo '<script language="javascript">alert("Usuario invalido");</script>';
             }
         }
         else{
             echo "Ingrese todos los datos" ;
-            echo '<script language="javascript">alert("Ingrese todos los datos");</script>';
+            //echo '<script language="javascript">alert("Ingrese todos los datos");</script>';
         }
     }
     ?>
