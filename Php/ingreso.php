@@ -91,7 +91,7 @@
                     $_SESSION['usser'] = $_POST['usuario'] ;
                     $_SESSION['pass'] = $_POST['contraseña'];
                     $nom = $_SESSION['usser'];
-                    echo "<h1> Ha ingresado el usuario $nom al sistema </h1> ";
+                    echo "Ha ingresado el usuario $nom al sistema ";
                     //echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>';
                     header('refresh:4; url=carrito.php');
                 }
