@@ -91,10 +91,9 @@
                     $_SESSION['usser'] = $_POST['usuario'] ;
                     $_SESSION['pass'] = $_POST['contraseña'];
                     $nom = $_SESSION['usser'];
-                    echo "<h1> Ha ingresado el usuario '.$nom.'  al sistema </h1> ";
+                    echo "<h1> Ha ingresado el usuario $nom al sistema </h1> ";
                     //echo '<script language="javascript">alert("Ha ingresado '.$nom.' al sistema");</script>';
-                    //header("Location:carrito.php");
-                    '<meta http-equiv="refresh" content="5;URL=carrito.php" /> ';
+                    header('refresh:4; url=carrito.php');
                 }
                 else{
                     echo "Contraseña invalida" ;
