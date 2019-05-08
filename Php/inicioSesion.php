@@ -30,12 +30,12 @@
         <nav class="barra">
             <ul class="items_list">
 
-                <li class="items_nav"><a href="../index.html"><span class="icon-home3"></span>Inicio</a></li>
-                <li class="items_nav"><a href="../index.html#AcercaDe"><span class="icon-earth"></span>Acerca De</a></li>
-                <li class="items_nav"><a href="../index.html#Productos"><span class="icon-briefcase"></span>Productos</a></li>
-                <li class="items_nav"><a href="../index.html#About"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
-                <li class="items_nav"><a href="../index.html#Contacto"><span class="icon-mail"></span>Contactenos</a></li>
-                <li class="items_nav"><a href="../index.html"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count">0</span></a></li>
+                <li class="items_nav"><a href="../index.php"><span class="icon-home3"></span>Inicio</a></li>
+                <li class="items_nav"><a href="../index.php"><span class="icon-earth"></span>Acerca De</a></li>
+                <li class="items_nav"><a href="../index.php"><span class="icon-briefcase"></span>Productos</a></li>
+                <li class="items_nav"><a href="../index.php"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
+                <li class="items_nav"><a href="../index.php#Contacto"><span class="icon-mail"></span>Contactenos</a></li>
+                <li class="items_nav"><a href="../index.php"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count"></span></a></li>
                 <li class="items-nav"><a href="#"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
             </ul>
         </nav>
