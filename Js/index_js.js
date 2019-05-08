@@ -97,19 +97,3 @@ function validar() {
     }
 
 }
-
-function car(){
-
-    if(isset($_GET['nombre']) && isset($_GET['precio'])) {
-    $iUltimaPos = count($aCarrito);
-    $aCarrito[$iUltimaPos]['nombre'] = $_GET['nombre'];
-    $aCarrito[$iUltimaPos]['precio'] = $_GET['precio'];
-    }
-}
-
-var buttonValidation = document.getElementById('validateButton');
-
-buttonValidation.addEventListener('click', validar);
-
-var buttonValidation =document.getElementById('botonComprar')
-buttonValidation.addEventListener('click',car)
