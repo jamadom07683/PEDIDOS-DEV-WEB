@@ -49,22 +49,19 @@
     <br>
     <br>
     <br>
+
     <div class="Sesion" id="Sesion">
        <div class="container">
           <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
-               <!-- Elementos generados a partir del JSON -->
-               <main id="items" class="col-sm-8 row"></main>
-               <!-- Carrito -->
-               <aside class="col-sm-4">
-                   <h2>Carrito</h2>
-                   <!-- Elementos del carrito -->
-                   <ul id="carrito" class="list-group"></ul>
-                   <hr>
-                   <!-- Precio total -->
-                   <p class="text-right">Total: <span id="total"></span>&pesos;</p>
-               </aside>
+                <ul>
+                    <li><a>Destructora de papel</a></li>
+                    <li><a >Legajador</a></li>
+                    <li><a >Computadora</a></li>
+                    <li><a>Papel tamaño carta</a></li>
+                    <li><a>100 Boligrafos</a></li>
+                </ul>
             </div>
 
        </div>
