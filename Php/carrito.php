@@ -100,6 +100,7 @@
                 </ol>
                 <a>CARRO DE COMPRAS</a>
                 <br>
+                <p></p>
                 <br>
                 <a>Precio total:  </a>
                 <br>
