@@ -50,13 +50,44 @@
     <br>
     <br>
 
+    <?php
+
+    $aCarrito = array();
+    $sHTML = '';
+    $fPrecioTotal = 0;
+
+    //Anyado un nuevo articulo al carrito
+
+    if(isset($_GET['nombre']) && isset($_GET['precio'])) {
+    $iUltimaPos = count($aCarrito);
+    $aCarrito[$iUltimaPos]['nombre'] = $_GET['nombre'];
+    $aCarrito[$iUltimaPos]['precio'] = $_GET['precio'];
+    }
+    //Creamos la cookie (serializamos)
+
+    $iTemCad = time() + (60 * 60);
+    setcookie('carrito', serialize($aCarrito), $iTemCad);
+
+    //Imprimimos el contenido del array
+
+    foreach ($aCarrito as $key => $value) {
+    $sHTML .= '-> ' . $value['nombre'] . ' ' . $value['precio'] . '<br>';
+    $fPrecioTotal += $value['precio'];
+    }
+
+    //Imprimimos el precio total
+
+    $sHTML .= '<br>------------------<br>Precio total: ' . $fPrecioTotal;
+
+
+    ?>
     <div class="Sesion" id="Sesion">
        <div class="container">
           <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
                 <ul>
-                    <li><a>Destructora de papel   $50000</a><br><input type="submit" style="background:blue" value="+"></li>
+                    <li><a href="carrito.php?nombre=Destructora&precio=50000">Destructora de papel   $50000</a><br><input type="submit" style="background:blue" value="+"></li>
                     <li><a >Legajador   $3500</a><br><input type="submit" style="background:blue" value="+"></li>
                     <li><a >Computadora    $3000000</a><br><input type="submit" style="background:blue" value="+"></li>
                     <li><a>Papel tamaño carta   $150</a><br><input type="submit" style="background:blue" value="+"></li>
@@ -67,7 +98,9 @@
                 <ol>
 
                 </ol>
-                <a>Precio total: </a>
+                <a>CARRO DE COMPRAS</a>
+                <a>Precio total:  </a>
+                <br>
                 <input type="submit" style="background:#2E9AFE" value="Comprar">
             </div>
 
