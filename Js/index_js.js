@@ -16,13 +16,13 @@ var contador_navbar = 1;
 
 $(document).ready(procs);
 
-var con_proc = 0 ;
+var con_proc = 0;
 /**
  * Aumenta en uno el contador del carrito de compras cuando le da clic a algún producto
  * @returns {boolean} Retorna falso cada vez que da clic para evitar que lo rediriga al inicio de la página.
  */
-function procs(){
-    $('.img_pro').click(function(){
+function procs() {
+    $('.img_pro').click(function () {
         con_proc = con_proc + 1;
         $("#items_count").text(con_proc);
         return false;
@@ -36,10 +36,10 @@ function procs(){
  *Ocultamiento o muestra del menu lateral cuando se observa en dispositivos moviles.
  *
  */
-function func_navbar(){
-    $('.menu_bar').click(function(){
+function func_navbar() {
+    $('.menu_bar').click(function () {
 
-        if(contador_navbar == 1){
+        if (contador_navbar == 1) {
 
             contador_navbar = 0;
 
@@ -93,7 +93,7 @@ function validar() {
         alert('El mensaje esta vacio!');
     } else {
         document.getElementById('row').innerHTML = "Gracias por contactarnos, en pocos minutos nos comunicaremos.";
-         document.getElementById('row').setAttribute('class','mensajegraci')
+        document.getElementById('row').setAttribute('class', 'mensajegraci')
     }
 
 }

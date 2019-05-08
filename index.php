@@ -32,9 +32,9 @@
                 <li class="items_nav"><a href="#"><span class="icon-home3"></span>Inicio</a></li>
                 <li class="items_nav"><a href="#AcercaDe"><span class="icon-earth"></span>Acerca De</a></li>
                 <li class="items_nav"><a href="#Productos"><span class="icon-briefcase"></span>Productos</a></li>
-                <li class="items_nav"><a href="#about"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
+                <li class="items_nav"><a href="#About"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
                 <li class="items_nav"><a href="#Contacto"><span class="icon-mail"></span>Contactenos</a></li>
-                <li class="items_nav"><a href="#header"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count">0</span></a></li>
+                <li class="items_nav"><a href="Php/carrito.php"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count"></span></a></li>
                 <li class="items-nav"><a href="Php/inicioSesion.php"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
             </ul>
         </nav>
@@ -53,17 +53,16 @@
                     <p class="text-white-80 mx-auto mt-2 mb-5"> Ofrecemos productos de calidad de todo tipo para toda ocasion, añade, paga y espera el envio.
                     </p>
                 </h1>
-        </div>
+            </div>
         </div>
     </header>
 
 
     <div class="AcercaDe text-center" id="AcercaDe">
         <div class="container">
+            <h1 class="text-center text-uppercase text-white ">¿Que hacemos?</h1>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h1 class="text-center text-uppercase text-white ">¿Que hacemos?</h1>
-                    <br>
                     <p class="text-white-50">Somos tu solucion, para no aburrirte mientras pasas por acá, este es un breve resumen: </p>
                     <p class="text-white-50">Somos una tienda online de productos de oficina y aseo.</p>
                     <p class="text-white-50">Pero no cualquier tienda, una en la que puedas pedir tus cosas sin mayor esfuerzo y las tengas en tu poder sin salir de tu sitio de trabajo</p>
@@ -78,37 +77,35 @@
 
 
     <!-- Productos -->
-    <div class="productos" id="Productos">
+    <div class="Productos" id="Productos">
         <div class="container">
-            <br>
-            <br>
             <h1 class="text-center text-uppercase text-white mb-4">Productos</h1>
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <a class="img_pro des_pal" href="#" ><img src="Images/destructora-de-papel.jpg" class="img-fluid"></a>
+                    <a class="img_pro des_pal" href="#"><img src="Images/destructora-de-papel.jpg" class="img-fluid"></a>
                     <div class="des">
-                        Destructora de Papel
+                        <a>Destructora de Papel</a>
                     </div>
                     <span class="text-white">Epson</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
                     <a class="img_pro leg_az" href="#"><img src="Images/legajador-az.jpg" class="img-fluid"></a>
                     <div class="des">
-                        Legajador AZ
+                        <a>Legajador AZ</a>
                     </div>
                     <span class="text-white">Pac</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                   <a class="img_pro comp_all" href="#"> <img src="Images/monitor.jpg" class="img-fluid"></a>
+                    <a class="img_pro comp_all" href="#"> <img src="Images/monitor.jpg" class="img-fluid"></a>
                     <div class="des">
-                        Computadora All In One
+                        <a>Computadora All In One</a>
                     </div>
                     <span class="text-muted text-white">Acer</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
                     <a class="img_pro pap_fot" href="#"><img src="Images/papel-fotocopia.jpg" class="img-fluid"></a>
                     <div class="des">
-                        Papel Fotocopia Tamaño Carta
+                        <a>Papel Fotocopia Tamaño Carta</a>
                     </div>
                     <span class="text-white">CartoPrint</span>
                 </div>
@@ -116,30 +113,30 @@
             <br>
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                  <a class="img_pro set_bol" href="#">  <img src="Images/boligrafo-kilometrico-100-40-unidades-7703486038576.jpg" class="img-fluid"></a>
+                    <a class="img_pro set_bol" href="#"> <img src="Images/boligrafo-kilometrico-100-40-unidades-7703486038576.jpg" class="img-fluid"></a>
                     <div class="des">
-                        Set 100 Boligrafos
+                        <a>Set 100 Boligrafos</a>
                     </div>
                     <span class="text-white ">Kilometrico</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
                     <a class="img_pro bloc_hojas" href="#"><img src="Images/block-bond-tamano-carta-amarillo-7702111428553.jpg" class="img-fluid"></a>
                     <div class="des">
-                        Bloc Anotador 80 Hojas
+                        <a>Bloc Anotador 80 Hojas</a>
                     </div>
                     <span class="text-white">Norma</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                   <a class="img_pro lib_con" href="#"> <img src="Images/libro-contable-de-3-columnas-7701016597227.jpg" class="img-fluid"></a>
+                    <a class="img_pro lib_con" href="#"> <img src="Images/libro-contable-de-3-columnas-7701016597227.jpg" class="img-fluid"></a>
                     <div class="des">
-                        Libro Contable de 3 Columnas
+                        <a>Libro Contable de 3 Columnas</a>
                     </div>
                     <span class="text-white">Pac</span>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
                     <a class="img_pro org_esc" href="#"><img src="Images/set-organizador-para-escritorio-color-negro-4719853524590.jpg" class="img-fluid"></a>
                     <div class="des">
-                        Organizador de Escritorio
+                        <a>Organizador de Escritorio</a>
                     </div>
                     <span class="text-white">Interlink</span>
                 </div>
@@ -149,7 +146,7 @@
 
 
     <!-- Equipo de Trabajo -->
-    <div class="about" id="about">
+    <div class="About" id="About">
         <div class="container">
             <h1 class="text-center text-uppercase text-white mb-4">Equipo de Trabajo</h1>
             <div class="row">
@@ -222,12 +219,10 @@
     <div class="Contacto" id="Contacto">
         <div class="container">
             <br>
-            <br>
-            <h2 class="text-center text-uppercase text-white mb-4">Contactenos</h2>
-            <hr class="star-dark mb-5">
+            <h1 class="text-center text-uppercase text-white mb-4">Contactenos</h1>
             <div class="row" id="row">
                 <div class="col-lg-8 mx-auto">
-                    <form name="sentMessage" id="contactForm" name="novalidate">
+                    <form name="sentMessage" id="contactForm">
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Nombre</label>
@@ -267,6 +262,8 @@
             </div>
         </div>
     </div>
+
+
 
 
 

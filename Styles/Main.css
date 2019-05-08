@@ -132,7 +132,12 @@
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
-.productos {
+.AcercaDe h1 {
+    color: #F97300;
+    margin: 2em;
+}
+
+.Productos {
     position: relative;
     background-color: black;
     padding: 2em;
@@ -141,20 +146,19 @@
     -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
-
-
 }
 
-.productos h1 {
+
+.Productos h1 {
     color: white:;
     margin: 2em;
 }
 
-.productos .item {
+.Productos .item {
     position: relative;
 }
 
-.productos .des {
+.Productos .des {
     background: #616161;
     color: #fff;
     text-align: center;
@@ -164,7 +168,7 @@
 
 }
 
-.productos span {
+.Productos span {
     color: black;
     font-weight: bold;
 }
@@ -172,7 +176,7 @@
 
 /*Equipo De Trabajo*/
 
-.about {
+.About {
     margin: 4em;
     padding: 1em;
     position: relative;
@@ -183,12 +187,12 @@
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
-.about h1 {
+.About h1 {
     color: #F97300;
     margin: 2em;
 }
 
-.about img {
+.About img {
     height: 100%;
     width: 100%;
     border-radius: 50%
@@ -204,23 +208,23 @@
     font: normal normal 300 normal 23.1px / 31.5px "Scope One", serif;
 }
 
-.about span {
+.About span {
     display: block;
     color: #888;
     position: absolute;
     left: 115px;
 }
 
-.about .desc {
+.About .desc {
     padding: 2em;
     border-left: 4px solid #10828C;
 }
 
-.about .desc h3 {
+.About .desc h3 {
     color: #10828C;
 }
 
-.about .desc p {
+.About .desc p {
     line-height: 2;
     color: white;
 }
@@ -237,6 +241,12 @@
     -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 }
+
+.Contacto h1 {
+    color: #F97300;
+    margin: 2em;
+}
+
 
 
 .floating-label-form-group {
@@ -299,6 +309,7 @@ form .row:first-child .floating-label-form-group {
     color: #10828C;*/
     color: #024959;
     font-weight: bolt;
+    margin: 1em;
 }
 
 .Nom_form {
@@ -316,4 +327,48 @@ form .row:first-child .floating-label-form-group {
     -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.Sesion h1{
+    color: #F97300;
+    margin: 2em;
+}
+
+.container{
+    margin: 2em;
+}
+
+.Ingreso{
+    background-color: black;
+    padding: 2em;
+    margin: 4em;
+    border-radius: 2em;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.Ingreso p{
+    text-align: center;
+    font-size: 38px;
+    color: #024959;
+    margin: 1em;
+}
+
+/*arrito*/
+.carrito{
+    position: relative;
+    background-color: black;
+    padding: 2em;
+    margin: 4em;
+    border-radius: 2em;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+
+}
+.carrito h1{
+    color: #F97300;
+    margin: 2em;
 }
