@@ -87,7 +87,7 @@
             <hr class="star-dark mb-5">
             <div class="row" id="row">
                 <ul>
-                    <li><a href="carrito.php?nombre=Destructora&precio=50000">Destructora de papel   $50000</a><br><input type="submit" style="background:blue" value="+"></li>
+                    <li><a>Destructora de papel   $50000</a><br><input type="submit" style="background:blue" value="+"></li>
                     <li><a >Legajador   $3500</a><br><input type="submit" style="background:blue" value="+"></li>
                     <li><a >Computadora    $3000000</a><br><input type="submit" style="background:blue" value="+"></li>
                     <li><a>Papel tamaño carta   $150</a><br><input type="submit" style="background:blue" value="+"></li>
@@ -99,6 +99,8 @@
 
                 </ol>
                 <a>CARRO DE COMPRAS</a>
+                <br>
+                <br>
                 <a>Precio total:  </a>
                 <br>
                 <input type="submit" style="background:#2E9AFE" value="Comprar">
