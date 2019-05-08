@@ -56,11 +56,11 @@
             <hr class="star-dark mb-5">
             <div class="row" id="row">
                 <ul>
-                    <li><a>Destructora de papel</a><br><input type="text" value="+"></li>
-                    <li><a >Legajador</a><br><input type="text" value="+"></li>
-                    <li><a >Computadora</a><br><input type="text" value="+"></li>
-                    <li><a>Papel tamaño carta</a><br><input type="text" value="+"></li>
-                    <li><a>100 Boligrafos</a><br><input type="text" value="+"></li>
+                    <li><a>Destructora de papel   $50000</a><br><input type="submit" style="background:blue" value="+"></li>
+                    <li><a >Legajador   $3500</a><br><input type="submit" style="background:blue" value="+"></li>
+                    <li><a >Computadora    $3000000</a><br><input type="submit" style="background:blue" value="+"></li>
+                    <li><a>Papel tamaño carta   $150</a><br><input type="submit" style="background:blue" value="+"></li>
+                    <li><a>100 Boligrafos    $1000 </a><br><input type="submit" style="background:blue" value="+"></li>
                 </ul>
             </div>
 
