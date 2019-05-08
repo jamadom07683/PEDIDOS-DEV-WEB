@@ -63,6 +63,13 @@
                     <li><a>100 Boligrafos    $1000 </a><br><input type="submit" style="background:blue" value="+"></li>
                 </ul>
             </div>
+            <div class="row" id="row">
+                <ol>
+
+                </ol>
+                <a>Precio total: </a>
+                <input type="submit" style="background:#2E9AFE" value="Comprar">
+            </div>
 
        </div>
 
