@@ -56,11 +56,11 @@
             <hr class="star-dark mb-5">
             <div class="row" id="row">
                 <ul>
-                    <li><a>Destructora de papel</a></li>
-                    <li><a >Legajador</a></li>
-                    <li><a >Computadora</a></li>
-                    <li><a>Papel tamaño carta</a></li>
-                    <li><a>100 Boligrafos</a></li>
+                    <li><a>Destructora de papel</a><br><input type="text" value="+"></li>
+                    <li><a >Legajador</a><br><input type="text" value="+"></li>
+                    <li><a >Computadora</a><br><input type="text" value="+"></li>
+                    <li><a>Papel tamaño carta</a><br><input type="text" value="+"></li>
+                    <li><a>100 Boligrafos</a><br><input type="text" value="+"></li>
                 </ul>
             </div>
 
