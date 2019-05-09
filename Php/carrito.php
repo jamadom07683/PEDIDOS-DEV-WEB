@@ -50,6 +50,7 @@
     <br>
     <br>
 
+
     <div class="Sesion" id="Sesion">
        <div class="container">
           <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
@@ -62,6 +63,19 @@
                     <li><a>Papel tamaño carta   $150</a><br><input type="submit" style="background:blue" value="+"></li>
                     <li><a>100 Boligrafos    $1000 </a><br><input type="submit" style="background:blue" value="+"></li>
                 </ul>
+            </div>
+            <div class="row" id="row">
+                <ol>
+
+                </ol>
+                <title>CARRO DE COMPRAS</title>
+                <br>
+                <p></p>
+                <br>
+                <a>Precio total:    </a>
+                <br>
+                <input type="submit" style="background:#2E9AFE" value="Comprar">
+
             </div>
 
        </div>

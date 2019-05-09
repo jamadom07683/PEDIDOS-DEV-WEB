@@ -97,8 +97,3 @@ function validar() {
     }
 
 }
-
-
-var buttonValidation = document.getElementById('validateButton');
-
-buttonValidation.addEventListener('click', validar);
