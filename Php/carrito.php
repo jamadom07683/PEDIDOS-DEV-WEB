@@ -55,7 +55,7 @@
             <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
-
+                <p> <?php mostrar() ?></p>
             </div>
 
         </div>
@@ -65,9 +65,9 @@
 
     <?php
     function mostrar(){
-        setcookie()
-        echo $_GET['producto']
-        echo $_GET['precio']
+        setcookie();
+        echo $_GET['producto'];
+        echo $_GET['precio'];
     }
 
     ?>
