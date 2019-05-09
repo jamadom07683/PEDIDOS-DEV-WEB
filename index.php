@@ -87,8 +87,8 @@
                         <div class="des">
                             <a>Destructora de Papel</a>
                         </div>
-                        <span class="text-white">Epson</span>
                         <div>
+                            <span class="text-white">Epson</span>
                             <input type="submit" class="btn btn-primary btn-xl" value="Agregar">
                         </div>
                     </form>
