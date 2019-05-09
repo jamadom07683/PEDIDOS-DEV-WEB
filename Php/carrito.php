@@ -73,6 +73,7 @@
         setcookie('precio',$_GET['precio']);
 
         echo $_COOKIE['producto'];
+        echo '<br />';
         echo $_COOKIE['precio'];
 
         unset($_COOKIE['producto']);
