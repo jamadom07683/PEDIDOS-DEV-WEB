@@ -82,13 +82,15 @@
             <h1 class="text-center text-uppercase text-white mb-4">Productos</h1>
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <a class="img_pro des_pal" href="#"><img src="Images/destructora-de-papel.jpg" class="img-fluid"></a>
-                    <div class="des">
-                        <a>Destructora de Papel</a>
-                    </div>
-                    <span class="text-white">Epson</span>
-                    <form action="carrito.php" method="post">
-                        <input type="text" type="submit" class="btn btn-primary btn-xl" value="Agregar">
+                    <form action="carrito.php" method="get">
+                        <a class="img_pro des_pal" href="#"><img src="Images/destructora-de-papel.jpg" class="img-fluid"></a>
+                        <div class="des">
+                            <a>Destructora de Papel</a>
+                        </div>
+                        <span class="text-white">Epson</span>
+                        <div>
+                            <input type="submit" class="btn btn-primary btn-xl" value="Agregar">
+                        </div>
                     </form>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
