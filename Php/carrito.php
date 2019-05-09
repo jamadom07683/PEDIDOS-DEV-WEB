@@ -67,9 +67,10 @@
     $productos=array();
 
     function mostrar(){
-        setcookie("producto",$_GET['producto'], time() -100);
-        setcookie("precio",$_GET['precio'], time () -100);
-        echo $_COOKIE["producto"];
+        setcookie('producto',$_GET['producto']);
+        setcookie('precio',$_GET['precio']);
+        echo $_COOKIE['producto'];
+        unset($_COOKIE['producto']);
 
     }
 
