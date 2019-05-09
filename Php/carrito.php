@@ -69,7 +69,7 @@
     function mostrar(){
         setcookie("producto",$_GET['producto'] );
         setcookie("precio",$_GET['precio']);
-        echo $_COOKIE['producto'];
+        echo $_COOKIE["producto"];
         //$_GET['producto'];
         //$_GET['precio'];
     }
