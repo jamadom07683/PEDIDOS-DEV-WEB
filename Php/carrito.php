@@ -67,30 +67,33 @@
     $productos=array();
     $precios=array();
 
+    /**
+     * [[Muestra las cookies tanto de nombre como precio del producto]]
+     */
     function mostrar(){
 
         setcookie('producto',$_GET['producto']);
         setcookie('precio',$_GET['precio']);
 
-        //echo $_COOKIE['producto'];
-        //echo '<br />';
-        //echo $_COOKIE['precio'];
+        echo $_COOKIE['producto'];
+        echo '<br />';
+        echo $_COOKIE['precio'];
 
         //$pro=$_COOKIE['producto'];
         //$pre=$_COOKIE['precio'];
 
-        global $productos,$precios;
+        //global $productos,$precios;
 
-        array_push($productos,$_COOKIE['producto']);
-        array_push($precios,$_COOKIE['precio']);
+        //array_push($productos,$_COOKIE['producto']);
+        //array_push($precios,$_COOKIE['precio']);
 
         unset($_COOKIE['producto']);
         unset($_COOKIE['precio']);
 
-        while($nom=current($productos)){
-            echo key($productos).'<br />';
-            next($productos);
-        }
+        //while($nom=current($productos)){
+            //echo key($productos).'<br />';
+            //next($productos);
+        //}
     }
 
     ?>
