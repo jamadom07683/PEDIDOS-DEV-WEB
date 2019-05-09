@@ -50,37 +50,7 @@
     <br>
     <br>
 
-    <?php
 
-    $aCarrito = array();
-    $sHTML = '';
-    $fPrecioTotal = 0;
-
-    //Anyado un nuevo articulo al carrito
-
-    if(isset($_GET['nombre']) && isset($_GET['precio'])) {
-    $iUltimaPos = count($aCarrito);
-    $aCarrito[$iUltimaPos]['nombre'] = $_GET['nombre'];
-    $aCarrito[$iUltimaPos]['precio'] = $_GET['precio'];
-    }
-    //Creamos la cookie (serializamos)
-
-    $iTemCad = time() + (60 * 60);
-    setcookie('carrito', serialize($aCarrito), $iTemCad);
-
-    //Imprimimos el contenido del array
-
-    foreach ($aCarrito as $key => $value) {
-    $sHTML .= '-> ' . $value['nombre'] . ' ' . $value['precio'] . '<br>';
-    $fPrecioTotal += $value['precio'];
-    }
-
-    //Imprimimos el precio total
-
-    $sHTML .= '<br>------------------<br>Precio total: ' . $fPrecioTotal;
-
-
-    ?>
     <div class="Sesion" id="Sesion">
        <div class="container">
           <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
@@ -102,18 +72,10 @@
                 <br>
                 <p></p>
                 <br>
-                <a>Precio total:  </a>
+                <a>Precio total:    </a>
                 <br>
                 <input type="submit" style="background:#2E9AFE" value="Comprar">
-                <?php
-                if(isset($COOKIE['compra'])){
-                    echo '<p></p>';
-                    setcookie('compra',''time()-5000);
-                }else{
-                    echo '<p>/p>'
-                    setcookie('compra','Productos creados: ');
-                }
-                ?>
+
             </div>
 
        </div>
