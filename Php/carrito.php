@@ -70,8 +70,9 @@
     function mostrar(){
         setcookie('producto',$_GET['producto']);
         setcookie('precio',$_GET['precio']);
-        $pro=$_COOKIE['producto'];
-        $pre=$_COOKIE['precio'];
+
+        //$pro=$_COOKIE['producto'];
+        //$pre=$_COOKIE['precio'];
 
         //array_push($productos,pro);
         //array_push($precios,pre);
