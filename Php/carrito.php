@@ -65,12 +65,20 @@
 
     <?php
     $productos=array();
+    $precios=array();
 
     function mostrar(){
         setcookie('producto',$_GET['producto']);
         setcookie('precio',$_GET['precio']);
-        echo $_COOKIE['producto'];
+        $productos.push($_COOKIE['producto']);
+        $precios.push($_COOKIE['precio']);
         unset($_COOKIE['producto']);
+        unset($_COOKIE['precio']);
+
+        while($nom=current($productos)){
+        echo key($productos).'<br />';
+        next($productos);
+    }
 
     }
 
