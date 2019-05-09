@@ -72,15 +72,17 @@
         setcookie('precio',$_GET['precio']);
         $pro=$_COOKIE['producto'];
         $pre=$_COOKIE['precio'];
-        $productos.push($pro);
 
+        $productos.push($pro);
         $precios.push($pre);
+
         unset($_COOKIE['producto']);
         unset($_COOKIE['precio']);
 
         while($nom=current($productos)){
-        echo key($productos).'<br />';
-        next($productos);
+            echo key($productos).'<br />';
+            next($productos);
+        }
     }
 
     }
@@ -94,4 +96,5 @@
     <script src="../Js/index_js.js" type="text/javascript"></script>
 
 </body>
+
 </html>
