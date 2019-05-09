@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 <body background="Images/Fondo.jpg"></body>
-<title>Inicio Sesión</title>
+<title>Carrito</title>
 
 </head>
 
@@ -76,11 +76,13 @@
         //echo '<br />';
         //echo $_COOKIE['precio'];
 
-        $pro=$_COOKIE['producto'];
-        $pre=$_COOKIE['precio'];
+        //$pro=$_COOKIE['producto'];
+        //$pre=$_COOKIE['precio'];
 
-        array_push($productos,pro);
-        array_push($precios,pre);
+        global= $productos,$precios;
+
+        array_push($productos,$_COOKIE['producto']);
+        array_push($precios,$_COOKIE['precio']);
 
         unset($_COOKIE['producto']);
         unset($_COOKIE['precio']);
