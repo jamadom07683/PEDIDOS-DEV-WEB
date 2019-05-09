@@ -68,7 +68,7 @@
 
     function mostrar(){
         setcookie("producto",$_GET['producto'], time() -100);
-        setcookie("precio",$_GET['precio']), time () -100;
+        setcookie("precio",$_GET['precio'], time () -100);
         echo $_COOKIE["producto"];
 
     }
