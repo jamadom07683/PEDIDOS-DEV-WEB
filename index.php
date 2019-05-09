@@ -87,6 +87,9 @@
                         <a>Destructora de Papel</a>
                     </div>
                     <span class="text-white">Epson</span>
+                    <form action="carrito.php" method="post">
+                        <input type="text" type="submit" class="btn btn-primary btn-xl" value="Agregar">
+                    </form>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
                     <a class="img_pro leg_az" href="#"><img src="Images/legajador-az.jpg" class="img-fluid"></a>
