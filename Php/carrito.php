@@ -105,6 +105,15 @@
                 <a>Precio total:  </a>
                 <br>
                 <input type="submit" style="background:#2E9AFE" value="Comprar">
+                <?php
+                if(isset($COOKIE['compra'])){
+                    echo '<p></p>';
+                    setcookie('compra',''time()-5000);
+                }else{
+                    echo '<p>/p>'
+                    setcookie('compra','Productos creados: ');
+                }
+                ?>
             </div>
 
        </div>
