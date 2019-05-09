@@ -56,25 +56,6 @@
             <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
-                <ul>
-                    <li><a>Destructora de papel $50000</a><br><input type="submit" style="background:blue" value="+"></li>
-                    <li><a>Legajador $3500</a><br><input type="submit" style="background:blue" value="+"></li>
-                    <li><a>Computadora $3000000</a><br><input type="submit" style="background:blue" value="+"></li>
-                    <li><a>Papel tamaño carta $150</a><br><input type="submit" style="background:blue" value="+"></li>
-                    <li><a>100 Boligrafos $1000 </a><br><input type="submit" style="background:blue" value="+"></li>
-                </ul>
-            </div>
-            <div class="row" id="row">
-                <ol>
-
-                </ol>
-                <title>CARRO DE COMPRAS</title>
-                <br>
-                <p></p>
-                <br>
-                <a>Precio total: </a>
-                <br>
-                <input type="submit" style="background:#2E9AFE" value="Comprar">
 
             </div>
 
@@ -89,3 +70,4 @@
     <script src="../Js/index_js.js" type="text/javascript"></script>
 
 </body>
+</html>
