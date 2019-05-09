@@ -86,6 +86,8 @@
                         <a class="img_pro des_pal" href="#"><img src="Images/destructora-de-papel.jpg" class="img-fluid"></a>
                         <div class="des">
                             <a>Destructora de Papel</a>
+                            <input type="hidden" name="producto1" value="Destructora de Papel">
+                            <input type="hidden" name="precio1" value="50000">
                         </div>
                         <div>
                             <span class="text-white">Epson</span>
