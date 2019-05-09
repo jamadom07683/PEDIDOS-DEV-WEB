@@ -86,8 +86,8 @@
                         <a class="img_pro des_pal" href="#"><img src="Images/destructora-de-papel.jpg" class="img-fluid"></a>
                         <div class="des">
                             <a>Destructora de Papel</a>
-                            <input type="hidden" name="producto1" value="Destructora de Papel">
-                            <input type="hidden" name="precio1" value="50000">
+                            <input type="hidden" name="producto" value="Destructora de Papel">
+                            <input type="hidden" name="precio" value="50000">
                         </div>
                         <div>
                             <span class="text-white">Epson</span>
@@ -96,56 +96,105 @@
                     </form>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <a class="img_pro leg_az" href="#"><img src="Images/legajador-az.jpg" class="img-fluid"></a>
-                    <div class="des">
-                        <a>Legajador AZ</a>
-                    </div>
-                    <span class="text-white">Pac</span>
+                    <form action="Php/carrito.php" method="get">
+                        <a class="img_pro des_pal" href="#"><img src="Images/legajador-az.jpg" class="img-fluid"></a>
+                        <div class="des">
+                            <a>Legajador AZ</a>
+                            <input type="hidden" name="producto" value="Legajador AZ">
+                            <input type="hidden" name="precio" value="10000">
+                        </div>
+                        <div>
+                            <span class="text-white">Pac</span>
+                            <input type="submit" class="btn btn-primary btn-xl" value="Agregar">
+                        </div>
+                    </form>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <a class="img_pro comp_all" href="#"> <img src="Images/monitor.jpg" class="img-fluid"></a>
-                    <div class="des">
-                        <a>Computadora All In One</a>
-                    </div>
-                    <span class="text-muted text-white">Acer</span>
+                    <form action="Php/carrito.php" method="get">
+                        <a class="img_pro des_pal" href="#"><img src="Images/monitor.jpg" class="img-fluid"></a>
+                        <div class="des">
+                            <a>Computadora All In One</a>
+                            <input type="hidden" name="producto" value="Computadora All In One">
+                            <input type="hidden" name="precio" value="3000000">
+                        </div>
+                        <div>
+                            <span class="text-white">Acer</span>
+                            <input type="submit" class="btn btn-primary btn-xl" value="Agregar">
+                        </div>
+                    </form>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <a class="img_pro pap_fot" href="#"><img src="Images/papel-fotocopia.jpg" class="img-fluid"></a>
-                    <div class="des">
-                        <a>Papel Fotocopia Tamaño Carta</a>
-                    </div>
-                    <span class="text-white">CartoPrint</span>
+                    <form action="Php/carrito.php" method="get">
+                        <a class="img_pro des_pal" href="#"><img src="Images/papel-fotocopia.jpg" class="img-fluid"></a>
+                        <div class="des">
+                            <a>Papel Fotocopia Tamaño Carta</a>
+                            <input type="hidden" name="producto" value="Papel Fotocopia Tamaño Carta">
+                            <input type="hidden" name="precio" value="20000">
+                        </div>
+                        <div>
+                            <span class="text-white">CartoPrint</span>
+                            <input type="submit" class="btn btn-primary btn-xl" value="Agregar">
+                        </div>
+                    </form>
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <a class="img_pro set_bol" href="#"> <img src="Images/boligrafo-kilometrico-100-40-unidades-7703486038576.jpg" class="img-fluid"></a>
-                    <div class="des">
-                        <a>Set 100 Boligrafos</a>
-                    </div>
-                    <span class="text-white ">Kilometrico</span>
+                    <form action="Php/carrito.php" method="get">
+                        <a class="img_pro des_pal" href="#"><img src="Images/boligrafo-kilometrico-100-40-unidades-7703486038576.jpg" class="img-fluid"></a>
+                        <div class="des">
+                            <a>Set 100 Boligrafos</a>
+                            <input type="hidden" name="producto" value="Set 100 Boligrafos">
+                            <input type="hidden" name="precio" value="60000">
+                        </div>
+                        <div>
+                            <span class="text-white">Kilometrico</span>
+                            <input type="submit" class="btn btn-primary btn-xl" value="Agregar">
+                        </div>
+                    </form>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <a class="img_pro bloc_hojas" href="#"><img src="Images/block-bond-tamano-carta-amarillo-7702111428553.jpg" class="img-fluid"></a>
-                    <div class="des">
-                        <a>Bloc Anotador 80 Hojas</a>
-                    </div>
-                    <span class="text-white">Norma</span>
+                    <form action="Php/carrito.php" method="get">
+                        <a class="img_pro des_pal" href="#"><img src="Images/block-bond-tamano-carta-amarillo-7702111428553.jpg" class="img-fluid"></a>
+                        <div class="des">
+                            <a>Bloc Anotador 80 Hojas</a>
+                            <input type="hidden" name="producto" value="Bloc Anotador 80 Hojas">
+                            <input type="hidden" name="precio" value="30000">
+                        </div>
+                        <div>
+                            <span class="text-white">Norma</span>
+                            <input type="submit" class="btn btn-primary btn-xl" value="Agregar">
+                        </div>
+                    </form>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <a class="img_pro lib_con" href="#"> <img src="Images/libro-contable-de-3-columnas-7701016597227.jpg" class="img-fluid"></a>
-                    <div class="des">
-                        <a>Libro Contable de 3 Columnas</a>
-                    </div>
-                    <span class="text-white">Pac</span>
+                    <form action="Php/carrito.php" method="get">
+                        <a class="img_pro des_pal" href="#"><img src="Images/libro-contable-de-3-columnas-7701016597227.jpg" class="img-fluid"></a>
+                        <div class="des">
+                            <a>Libro Contable de 3 Columnas</a>
+                            <input type="hidden" name="producto" value="Libro Contable de 3 Columnas">
+                            <input type="hidden" name="precio" value="140000">
+                        </div>
+                        <div>
+                            <span class="text-white">Pac</span>
+                            <input type="submit" class="btn btn-primary btn-xl" value="Agregar">
+                        </div>
+                    </form>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <a class="img_pro org_esc" href="#"><img src="Images/set-organizador-para-escritorio-color-negro-4719853524590.jpg" class="img-fluid"></a>
-                    <div class="des">
-                        <a>Organizador de Escritorio</a>
-                    </div>
-                    <span class="text-white">Interlink</span>
+                    <form action="Php/carrito.php" method="get">
+                        <a class="img_pro des_pal" href="#"><img src="Images/set-organizador-para-escritorio-color-negro-4719853524590.jpg" class="img-fluid"></a>
+                        <div class="des">
+                            <a>Organizador de Escritorio</a>
+                            <input type="hidden" name="producto" value="Organizador de Escritorio">
+                            <input type="hidden" name="precio" value="1800000">
+                        </div>
+                        <div>
+                            <span class="text-white">Interlink</span>
+                            <input type="submit" class="btn btn-primary btn-xl" value="Agregar">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
