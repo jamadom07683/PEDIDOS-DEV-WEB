@@ -79,7 +79,7 @@
         //$pro=$_COOKIE['producto'];
         //$pre=$_COOKIE['precio'];
 
-        global= $productos,$precios;
+        global $productos,$precios;
 
         array_push($productos,$_COOKIE['producto']);
         array_push($precios,$_COOKIE['precio']);
