@@ -17,7 +17,7 @@
 
 </head>
 
-   <?php include("navbar.php")?>
+   <?php include("navbarInicio.php")?>
 
 
     <div class="Sesion" id="Sesion">
