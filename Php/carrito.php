@@ -73,8 +73,8 @@
         //$pro=$_COOKIE['producto'];
         //$pre=$_COOKIE['precio'];
 
-        $array_push($productos,$_COOKIE['producto']);
-        $array_push($precios,$_COOKIE['precio']);
+        array_push($productos,$_COOKIE['producto']);
+        array_push($precios,$_COOKIE['precio']);
         unset($_COOKIE['producto']);
         unset($_COOKIE['precio']);
 
