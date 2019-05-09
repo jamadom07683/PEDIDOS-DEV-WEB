@@ -64,10 +64,14 @@
 
 
     <?php
+    $productos=array();
+
     function mostrar(){
-        setcookie();
-        echo $_GET['producto'];
-        echo $_GET['precio'];
+        setcookie("producto",$_GET['producto'] );
+        setcookie("precio",$_GET['precio']);
+        echo $_COOKIE['producto'];
+        //$_GET['producto'];
+        //$_GET['precio'];
     }
 
     ?>
