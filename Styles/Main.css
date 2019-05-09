@@ -356,8 +356,8 @@ form .row:first-child .floating-label-form-group {
     margin: 1em;
 }
 
-/*arrito*/
-.carrito{
+/*carrito*/
+.Carrito{
     position: relative;
     background-color: black;
     padding: 2em;
@@ -368,7 +368,7 @@ form .row:first-child .floating-label-form-group {
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 
 }
-.carrito h1{
+.Carrito h1{
     color: #F97300;
     margin: 2em;
 }
