@@ -35,8 +35,8 @@
                 <li class="items_nav"><a href="#About"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
                 <li class="items_nav"><a href="#Contacto"><span class="icon-mail"></span>Contactenos</a></li>
                 <li class="items_nav"><a href="Php/carrito.php"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count"></span></a></li>
-                <li class="items-nav"><a href="Php/inicioSesion.php"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
                 <li class="items-nav"><a href="Php/registro.php"><i class=""></i> Registro </a></li>
+                <li class="items-nav"><a href="Php/inicioSesion.php"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
             </ul>
         </nav>
     </header>
