@@ -47,7 +47,7 @@
     <br>
     <br>
 
-    <div class="Ingreso" id="Ingreso">
+    <div class="Ingreso text-cente" id="Ingreso">
         <div class="container">
             <br>
             <br>

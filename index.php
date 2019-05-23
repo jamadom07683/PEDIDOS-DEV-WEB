@@ -78,7 +78,7 @@
 
 
     <!-- Productos -->
-    <div class="Productos" id="Productos">
+    <div class="Productos text-center" id="Productos">
         <div class="container">
             <h1 class="text-center text-uppercase text-white mb-4">Productos</h1>
             <div class="row">
@@ -203,7 +203,7 @@
 
 
     <!-- Equipo de Trabajo -->
-    <div class="About" id="About">
+    <div class="About text-center" id="About">
         <div class="container">
             <h1 class="text-center text-uppercase text-white mb-4">Equipo de Trabajo</h1>
             <div class="row">
@@ -273,7 +273,7 @@
     </div>
 
     <!-- Contactenos -->
-    <div class="Contacto" id="Contacto">
+    <div class="Contacto text-center" id="Contacto">
         <div class="container">
             <br>
             <h1 class="text-center text-uppercase text-white mb-4">Contactenos</h1>

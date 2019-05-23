@@ -50,7 +50,8 @@
     <br>
     <br>
 
-    <div class="Carrito" id="Carrito">
+    <!-- Carrito de Compras -->
+    <div class="Carrito text-center" id="Carrito">
         <div class="container">
             <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
             <hr class="star-dark mb-5">

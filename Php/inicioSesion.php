@@ -19,14 +19,14 @@
 
 <?php include("navbarInicio.php")?>
 
-
-<div class="Sesion" id="Sesion">
+<!-- Inicio de Sesion -->
+<div class="Sesion text-center" id="Sesion">
     <div class="container">
         <h1 class="text-center text-uppercase text-white mb-4">Iniciar Sesión </h1>
         <hr class="star-dark mb-5">
         <div class="row" id="row">
             <div class="col-lg-8 mx-auto">
-                <form name="sentMessage" id="contactForm" name="novalidate" action="ingreso.php" method="post">
+                <form name="sentMessage" id="sesionForm" name="nosesion" action="ingreso.php" method="post">
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Usuario</label>
@@ -48,8 +48,53 @@
                 </form>
 
                 <div class="form-group">
-                    <input type="submit" class="btn btn-primary btn-xl" value="Registrarse">
+                    <input type="submit" class="btn btn-primary btn-xl"  id="changeButton" value="Registrarse">
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Registro -->
+<div class="Registro text-center" id="Registro">
+    <div class="container">
+        <h1 class="text-center text-uppercase text-white ">Registrarse</h1>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <form name="sentMessage" id="registroForm" name="novalidate" action="ingreso.php" method="post">
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Nombre</label>
+                            <h2 class="Nom_form">Nombre</h2> <input class="form-control" type="text" id="" name="usuario">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Usuario</label>
+
+                            <h2 class="Nom_form">Usuario</h2> <input class="form-control" type="text" id="" name="usuario">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Contraseña</label>
+                            <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="" name="contraseña">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Contraseña</label>
+                            <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="" name="contraseña">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-xl" value="Ingresar">
+                    </div>
+                </form>
             </div>
         </div>
     </div>

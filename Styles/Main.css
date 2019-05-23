@@ -309,7 +309,7 @@ form .row:first-child .floating-label-form-group {
     color: #10828C;*/
     color: #024959;
     font-weight: bolt;
-    margin: 1em;
+    margin: 2em;
 }
 
 .Nom_form {
@@ -356,7 +356,7 @@ form .row:first-child .floating-label-form-group {
     margin: 1em;
 }
 
-/*carrito*/
+/*Carrito*/
 .Carrito{
     position: relative;
     background-color: black;
@@ -371,4 +371,9 @@ form .row:first-child .floating-label-form-group {
 .Carrito h1{
     color: #F97300;
     margin: 2em;
+}
+
+/*Registro*/
+.Registro {
+    display: :none
 }

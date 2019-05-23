@@ -100,3 +100,13 @@ function validar() {
 var buttonValidation = document.getElementById('validateButton');
 
 buttonValidation.addEventListener('click', validar);
+
+
+function cambiarForm(){
+    document.getElementById('Sesion').style.display = 'none';
+    document.getElementById('Registro').style.display = 'block';
+}
+
+var buttonChange = document.getElementById('changeButton');
+
+buttonChange.addEventListener('click',cambiarForm);
