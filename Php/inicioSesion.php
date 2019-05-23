@@ -20,7 +20,7 @@
 <?php include("navbarInicio.php")?>
 
 <!-- Inicio de Sesion -->
-<div class="Sesion text-center" id="Sesion">
+<div class="Sesion" id="Sesion">
     <div class="container">
         <h1 class="text-center text-uppercase text-white mb-4">Iniciar Sesión </h1>
         <hr class="star-dark mb-5">
@@ -48,7 +48,7 @@
                 </form>
 
                 <div class="form-group">
-                    <input type="submit" class="btn btn-primary btn-xl"  id="changeButton" value="Registrarse">
+                    <input type="buttom" class="btn btn-primary btn-xl"  id="changeButton" value="Registrarse">
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
 </div>
 
 <!-- Registro -->
-<div class="Registro text-center" id="Registro">
+<div class="Registro" id="Registro">
     <div class="container">
         <h1 class="text-center text-uppercase text-white ">Registrarse</h1>
         <div class="row">
