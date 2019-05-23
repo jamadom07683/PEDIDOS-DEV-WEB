@@ -55,7 +55,25 @@
             <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
-                <p> <?php mostrar() ?></p>
+                <table border="1px" cellpagging="5px" width="100%">
+                   <thead class="cartHeader" display="off">
+                    <tr>
+                        <th colspan="6">CARRO DE COMPRA</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Total pagar: <?=$cart->get_total_payment();?></th>
+                    </tr>
+                    </thead>
+                    <tbody class="cartBody">
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                        </tr>
+                        <?=$cart-get_items():?>
+                    </tbody>
+                </table>
+
             </div>
 
         </div>
