@@ -102,6 +102,9 @@ var buttonValidation = document.getElementById('validateButton');
 buttonValidation.addEventListener('click', validar);
 
 
+
+alert('Lo coge');
+
 function cambiarForm(){
     document.getElementById('Sesion').style.display = 'none';
     document.getElementById('Registro').style.display = 'block';
