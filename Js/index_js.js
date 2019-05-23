@@ -57,6 +57,16 @@ function func_navbar() {
     });
 }
 
+console.log('lo coge');
+
+function cambiarForm() {
+    document.getElementById('Sesion').style.display = 'none';
+    document.getElementById('Registro').style.display = 'block';
+}
+
+var buttonChange = document.getElementById('changeButton');
+
+buttonChange.addEventListener('click', cambiarForm);
 
 /**
  *
@@ -105,13 +115,4 @@ buttonValidation.addEventListener('click', validar);
 
 //alert('Lo coge');
 
-console.log('lo coge');
 
-function cambiarForm(){
-    document.getElementById('Sesion').style.display = 'none';
-    document.getElementById('Registro').style.display = 'block';
-}
-
-var buttonChange = document.getElementById('changeButton');
-
-buttonChange.addEventListener('click',cambiarForm);
