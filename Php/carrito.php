@@ -56,7 +56,7 @@
             <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
-                <p> <?php mostrar() ?></p>
+                <p> </p>
             </div>
 
         </div>
