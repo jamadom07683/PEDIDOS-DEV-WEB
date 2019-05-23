@@ -327,7 +327,6 @@ form .row:first-child .floating-label-form-group {
     -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
-     display: :none
 }
 
 .Sesion h1 {
@@ -377,5 +376,5 @@ form .row:first-child .floating-label-form-group {
 
 /*Registro*/
 .Registro {
-    display: :none
+    display: none;
 }
