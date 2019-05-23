@@ -103,7 +103,9 @@ buttonValidation.addEventListener('click', validar);
 
 
 
-alert('Lo coge');
+//alert('Lo coge');
+
+console.log('lo coge');
 
 function cambiarForm(){
     document.getElementById('Sesion').style.display = 'none';
