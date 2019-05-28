@@ -65,8 +65,10 @@ function cambiarForm() {
 }
 
 var buttonChange = document.getElementById('changeButton');
+if (buttonChange != null){
+    buttonChange.addEventListener('click', cambiarForm);
+}
 
-buttonChange.addEventListener('click', cambiarForm);
 
 /**
  *
@@ -113,6 +115,5 @@ buttonValidation.addEventListener('click', validar);
 
 
 
-//alert('Lo coge');
 
 
