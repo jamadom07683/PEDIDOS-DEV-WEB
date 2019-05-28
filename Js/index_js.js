@@ -100,7 +100,7 @@ function validar() {
 var buttonValidation = document.getElementById('validateButton');
 
 
-if (buttonChange != null){
+if (buttonValidation != null){
     buttonValidation.addEventListener('click', validar);
 }
 
