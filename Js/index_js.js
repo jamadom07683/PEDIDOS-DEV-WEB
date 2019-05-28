@@ -57,7 +57,6 @@ function func_navbar() {
     });
 }
 
-console.log('lo coge');
 
 function cambiarForm() {
     document.getElementById('Sesion').style.display = 'none';
@@ -65,6 +64,8 @@ function cambiarForm() {
 }
 
 var buttonChange = document.getElementById('changeButton');
+
+
 if (buttonChange != null){
     buttonChange.addEventListener('click', cambiarForm);
 }
@@ -111,7 +112,14 @@ function validar() {
 }
 var buttonValidation = document.getElementById('validateButton');
 
-buttonValidation.addEventListener('click', validar);
+
+if (buttonChange != null){
+    buttonValidation.addEventListener('click', validar);
+}
+
+
+
+
 
 
 
