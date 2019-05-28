@@ -58,19 +58,6 @@ function func_navbar() {
 }
 
 
-function cambiarForm() {
-    document.getElementById('Sesion').style.display = 'none';
-    document.getElementById('Registro').style.display = 'block';
-}
-
-var buttonChange = document.getElementById('changeButton');
-
-
-if (buttonChange != null){
-    buttonChange.addEventListener('click', cambiarForm);
-}
-
-
 /**
  *
  * Validación de los campos registrados por el usuario en los formularios.
@@ -115,6 +102,20 @@ var buttonValidation = document.getElementById('validateButton');
 
 if (buttonChange != null){
     buttonValidation.addEventListener('click', validar);
+}
+
+
+
+function cambiarForm() {
+    document.getElementById('Sesion').style.display = 'none';
+    document.getElementById('Registro').style.display = 'block';
+}
+
+var buttonChange = document.getElementById('changeButton');
+
+
+if (buttonChange != null){
+    buttonChange.addEventListener('click', cambiarForm);
 }
 
 
