@@ -177,7 +177,7 @@
                             <th>Producto</th>
                             <th>Precio</th>
                         </tr>
-                        <?=$cart-get_items():?>
+                        <?=$cart-get_items();?>
                     </tbody>
                 </table>
 
