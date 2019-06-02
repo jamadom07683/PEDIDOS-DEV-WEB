@@ -61,7 +61,7 @@
         <h1 class="text-center text-uppercase text-white ">Registrarse</h1>
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <form name="sentMessage" id="registroForm" name="novalidate" action="resulRegistrar.php" method="post">
+                <form name="sentMessage" id="registroForm" name="novalidate" action="ingreso.php" method="post">
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Nombre</label>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary btn-xl" value="Registrar">
+                        <input type="submit" class="btn btn-primary btn-xl" value="Ingresar">
                     </div>
                 </form>
             </div>
