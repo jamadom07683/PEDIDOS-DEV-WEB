@@ -1,9 +1,6 @@
-<?php include('config.php');
-
-<?
-<div class="container">
-
 <?php
+include('config.php');
+
     if (isset($_POST['Nombre']) && isset($_POST['Usuario']) && isset($_POST['Contraseña']){
         $sentenciaSQL = "INSERT INTO `Usuario` ( `Nombre`, `Usuario`, `Contraseña`) ";
         $sentenciaSQL = $sentenciaSQL."VALUES ( '";
@@ -18,4 +15,3 @@
         $conexion->close();
     }
 ?>
-</div>
