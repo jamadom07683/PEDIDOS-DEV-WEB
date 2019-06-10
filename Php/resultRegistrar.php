@@ -17,4 +17,4 @@ echo $query;
     echo '<br>paila ese man no se deja';
     }
 }
-
+?>
