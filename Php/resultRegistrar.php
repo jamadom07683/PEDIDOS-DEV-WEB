@@ -9,7 +9,7 @@ $Usuario = $_POST['usuario'];
 $Contrasena = $_POST['contraseña'];*/
 
 
-if (isset($_POST['nombre']) && isset($_POST['usuario']) && isset($_POST['contraseña'])){
+if (!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['contraseña'])){
 
     $sql = "INSERT INTO Usuario ( Nombre,Usuario,Contraseña ) VALUES (
     '".$_POST['nombre']."',
