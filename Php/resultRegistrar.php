@@ -12,7 +12,7 @@ $post="";
 if ($Nombre=="" || $Usuario=="" || $Contrasena=""){
         echo 'alert("Datos incorrectos o incompletos")';
 }
-$sql= "INSERT INTO Usuario (Nombre,Usuario,Contraseña) VALUES ('".$Nombre."','".$Usuario."','".$Contrasena."')";
+$sql= "INSERT INTO Usuario (Nombre,Usuario,Contrasena) VALUES ('".$Nombre."','".$Usuario."','".$Contrasena."')";
 
 if (mysqli_query($conn, $sql) === TRUE) {
     echo 'alert("Registro completo")';
