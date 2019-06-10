@@ -389,8 +389,6 @@ form .row:first-child .floating-label-form-group {
 
 /*Registrar*/
 .Registrar {
-    display: none;
-    position: relative;
     background-color: black;
     padding: 2em;
     margin: 4em;
