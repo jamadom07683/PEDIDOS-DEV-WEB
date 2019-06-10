@@ -21,7 +21,10 @@ if (!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['cont
     //)";
 
     $sql = "INSERT INTO Usuario (Nombre,Usuario,Contraseña) VALUES (
-    'Julian','julianflame','123')";
+    '".$_POST['nombre']."',
+    '".$_POST['usuario']."',
+    '".$_POST['contraseña']."'
+    )";
 
     /*
     if ($conn -> query($sql) == true){
