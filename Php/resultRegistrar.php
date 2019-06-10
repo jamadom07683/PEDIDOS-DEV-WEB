@@ -9,13 +9,14 @@ $Usuario = $_POST['usuario'];
 $Contrasena = $_POST['contraseña'];
 
 
-if ($Nombre=="" || $Usuario=="" || $Contrasena=""){
-        echo 'alert("Datos incorrectos o incompletos")';
+if (!empty( $_POST['nombre']) || !empty($_POST['usuario'];) || $_POST['contraseña']){
+        echo '<script language="javascript">alert("Datos incompletos");</script>';
 }
+
 $sql= "INSERT INTO Usuario (Nombre,Usuario,Contrasena) VALUES ('".$Nombre."','".$Usuario."','".$Contrasena."')";
 
 if (mysqli_query($conn, $sql) === TRUE) {
-    echo 'alert("Registro completo")';
+    echo '<script language="javascript">alert("Registro completo");</script>';
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
