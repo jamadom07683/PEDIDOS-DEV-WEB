@@ -9,7 +9,7 @@ $Usuario = $_POST['usuario'];
 $Contrasena = $_POST['contraseña'];
 
 
-if (!empty( $_POST['nombre']) || !empty($_POST['usuario']) || !empty($_POST['contraseña']){
+if (!empty( $_POST['nombre']) || !empty($_POST['usuario']) || !empty($_POST['contraseña'])){
         echo '<script language="javascript">alert("Datos incompletos");</script>';
 }
 
