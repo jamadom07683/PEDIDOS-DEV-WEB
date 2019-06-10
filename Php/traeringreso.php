@@ -10,7 +10,7 @@
     $Contraseña = mysql_real_escape_string($Contraseña);
 
     //conexión
-    mysql_connect("localhost","server","server");
+    mysql_connect("172.29.0.52","server","server");
     mysql_select_db("Proyecto");
 
     //resultado
