@@ -2,6 +2,7 @@
 require_once('connection.php');
 $Nombre = $Usuario = $Contraseña = '';
 
+echo $_POST['Nombre'];
 $Nombre = $_POST['Nombre'];
 $Usuario = $_POST['Usuario'];
 $Contrasena = $_POST['Contraseña'];
