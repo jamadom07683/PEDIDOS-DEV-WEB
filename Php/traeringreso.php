@@ -9,10 +9,18 @@ $sql = "SELECT * FROM Usuario WHERE Usuario='$Usuario' AND Contraseña='$Contras
 $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result) == 0)
 {
-	echo "Usuario o clave incorrecta";
+	while($row = mysqli_fetch_assoc($result))
+	{
+		$id = $row["ID"];
+		$Usuario = $row["user"];
+		session_start();
+		$_SESSION['id'] = $id;
+		$_SESSION['password'] = $Contrasena;
+	}
+	echo "Bienvenido";
 }
 else
 {
-	echo "Bienvenido";
+	echo "Invalid usser or password";
 }
 ?>
