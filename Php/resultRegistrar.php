@@ -16,11 +16,14 @@ if (!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['cont
     '".$_POST['usuario']."',
     '".$_POST['contraseña']."'
     )";
-    echo $sql;
+
     if ($conn -> query($sql) == true){
-    echo '<br>See Insertó el usuario';
+
+        echo '<br>See Insertó el usuario';
+
     }else{
-    echo '<br>paila ese man no se deja';
+
+        echo '<br>paila ese man no se deja';
     }
 }
 
