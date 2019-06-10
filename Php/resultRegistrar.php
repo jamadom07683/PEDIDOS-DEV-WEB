@@ -18,5 +18,6 @@ if($result)
 else
 {
 	echo "Error :".$sql;
+}
 ?>
 
