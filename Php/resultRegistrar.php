@@ -27,12 +27,14 @@ if (isset($_POST['nombre']) && isset($_POST['usuario']) && isset($_POST['contras
 $message = '';
 
 if(!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['contraseña'])){
-    $sql ="INSERT INTO Usuario (Nombre,Usuario,Contraseña) VALUES (:Nombre,:Usuario,:Contraseña)";
+    $sql ="INSERT INTO Usuario (Nombre,Usuario,Contraseña) VALUES (:nombre,:usuario,:contraseña)";
     $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':Nombre',$_POST['nombre']);
-    $stmt->bindParam(':Usuario',$_POST['usuario']);
+    $stmt->bindParam(':nombre',$_POST['nombre']);
+
+    $stmt->bindParam(':usuario',$_POST['usuario']);
+
     $password = password_hash($_POST['contraseña'],PASSWORD_BCRYPT);
-    $stmt->bindParam(':Contraseña', $password);
+    $stmt->bindParam(':contraseña', $password);
 
      if ($stmt->execute()) {
       $message = 'Successfully created new user';
