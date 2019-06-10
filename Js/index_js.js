@@ -97,3 +97,32 @@ function validar() {
     }
 
 }
+var buttonValidation = document.getElementById('validateButton');
+
+
+if (buttonValidation != null){
+    buttonValidation.addEventListener('click', validar);
+}
+
+
+
+function cambiarForm() {
+    document.getElementById('Sesion').style.display = 'none';
+    document.getElementById('Registro').style.display = 'block';
+}
+
+var buttonChange = document.getElementById('changeButton');
+
+
+if (buttonChange != null){
+    buttonChange.addEventListener('click', cambiarForm);
+}
+
+
+
+
+
+
+
+
+

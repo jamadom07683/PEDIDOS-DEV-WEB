@@ -309,7 +309,7 @@ form .row:first-child .floating-label-form-group {
     color: #10828C;*/
     color: #024959;
     font-weight: bolt;
-    margin: 1em;
+    margin: 2em;
 }
 
 .Nom_form {
@@ -329,16 +329,16 @@ form .row:first-child .floating-label-form-group {
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
-.Sesion h1{
+.Sesion h1 {
     color: #F97300;
     margin: 2em;
 }
 
-.container{
+.container {
     margin: 2em;
 }
 
-.Ingreso{
+.Ingreso {
     background-color: black;
     padding: 2em;
     margin: 4em;
@@ -349,15 +349,15 @@ form .row:first-child .floating-label-form-group {
 }
 
 
-.Ingreso p{
+.Ingreso p {
     text-align: center;
     font-size: 38px;
     color: #024959;
     margin: 1em;
 }
 
-/*carrito*/
-.Carrito{
+/*Carrito*/
+.Carrito {
     position: relative;
     background-color: black;
     padding: 2em;
@@ -368,7 +368,21 @@ form .row:first-child .floating-label-form-group {
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 
 }
-.Carrito h1{
+
+.Carrito h1 {
     color: #F97300;
     margin: 2em;
+}
+
+/*Registro*/
+.Registro {
+    display: none;
+    position: relative;
+    background-color: black;
+    padding: 2em;
+    margin: 4em;
+    border-radius: 2em;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 }

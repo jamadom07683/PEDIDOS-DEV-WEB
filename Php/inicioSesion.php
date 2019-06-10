@@ -17,48 +17,97 @@
 
 </head>
 
-   <?php include("navbarInicio.php")?>
+<?php include("navbarInicio.php")?>
 
+<!-- Inicio de Sesion -->
+<div class="Sesion" id="Sesion">
+    <div class="container">
+        <h1 class="text-center text-uppercase text-white mb-4">Iniciar Sesión </h1>
+        <hr class="star-dark mb-5">
+        <div class="row" id="row">
+            <div class="col-lg-8 mx-auto">
+                <form name="sentMessage" id="sesionForm" name="nosesion" action="traeringreso.php" method="post">
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Usuario</label>
 
-    <div class="Sesion" id="Sesion">
-        <div class="container">
-            <h1 class="text-center text-uppercase text-white mb-4">Iniciar Sesión </h1>
-            <hr class="star-dark mb-5">
-            <div class="row" id="row">
-                <div class="col-lg-8 mx-auto">
-                    <form name="sentMessage" id="contactForm" name="novalidate" action="ingreso.php" method="post">
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Usuario</label>
+                            <h2 class="Nom_form">Usuario</h2> <input class="form-control" type="text" id="" name="usuario">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Contraseña</label>
+                            <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="" name="contraseña">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-xl" value="Ingresar">
+                    </div>
+                </form>
 
-                                <h2 class="Nom_form">Usuario</h2> <input class="form-control" type="text" id="" name="usuario">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Contraseña</label>
-                                <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="" name="contraseña">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-primary btn-xl" value="Ingresar">
-                        </div>
-                    </form>
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary btn-xl" id="changeButton">Registrarse</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <footer>
-        <p class="pie">PEDIDOS DEV WEB</p>
-    </footer>
+<!-- Registro -->
+<div class="Registro" id="Registro">
+    <div class="container">
+        <h1 class="text-center text-uppercase text-white ">Registrarse</h1>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <form name="sentMessage" id="registroForm" name="novalidate" action="resultRegistrar.php" method="post">
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Nombre</label>
+                            <h2 class="Nom_form">Nombre</h2> <input class="form-control" type="text" id="" name="nombre">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Usuario</label>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="../Js/index_js.js" type="text/javascript"></script>
+                            <h2 class="Nom_form">Usuario</h2> <input class="form-control" type="text" id="" name="usuario">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Contraseña</label>
+                            <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="" name="contraseña">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Contraseña</label>
+                            <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="" name="contraseña">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-xl" value="Registrar xd">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p class="pie">PEDIDOS DEV WEB</p>
+</footer>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="../Js/index_js.js" type="text/javascript"></script>
 </body>
 
 </html>
