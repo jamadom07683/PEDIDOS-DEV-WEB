@@ -14,13 +14,14 @@ $message = '';
 
 if (!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['contraseña'])){
 
-    $sql = "INSERT INTO Usuario ( Nombre,Usuario,Contraseña ) VALUES (
-    '".$_POST['nombre']."',
-    '".$_POST['usuario']."',
-    '".$_POST['contraseña']."'
-    )";
+    //$sql = "INSERT INTO Usuario ( Nombre,Usuario,Contraseña ) VALUES (
+    //'".$_POST['nombre']."',
+    //'".$_POST['usuario']."',
+    //'".$_POST['contraseña']."'
+    //)";
 
-     $stmt = $conn->prepare($sql);
+    $sql = "INSERT INTO Usuario ( Nombre,Usuario,Contraseña ) VALUES (
+    'Julian','julianflame','123')";
 
     /*
     if ($conn -> query($sql) == true){
