@@ -82,7 +82,7 @@
 
         if(mysqli_num_rows($result) == 0){
 
-            echo "Invalid usser or password";
+            echo "Usuario o contraseña invalida";
         }
         else{
             while($row = mysqli_fetch_assoc($result)){
@@ -93,6 +93,7 @@
                 $_SESSION['password'] = $Contrasena;
             }
             echo "Bienvenido";
+            header('refresh:2; url=../index.php');
         }
     }
 
