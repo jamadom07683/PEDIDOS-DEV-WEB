@@ -9,6 +9,9 @@ $Usuario = $_POST['usuario'];
 $Contrasena = $_POST['contraseña'];*/
 
 
+$message = '';
+
+
 if (!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['contraseña'])){
 
     $sql = "INSERT INTO Usuario ( Nombre,Usuario,Contraseña ) VALUES (
@@ -17,6 +20,9 @@ if (!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['cont
     '".$_POST['contraseña']."'
     )";
 
+     $stmt = $conn->prepare($sql);
+
+    /*
     if ($conn -> query($sql) == true){
 
         echo '<br>See Insertó el usuario';
@@ -25,7 +31,18 @@ if (!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['cont
 
         echo '<br>paila ese man no se deja';
     }
+    */
+
+    if ($stmt->execute()) {
+        echo '<br>Successfully created new user';
+    } else {
+        echo '<br>Sorry there must have been an issue creating your account';
+    }
+
+
 }
+
+
 
 
 /*
@@ -50,12 +67,12 @@ if(!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['contr
 }
 
 
-?>
 
 
- <?php if(!empty($message)): ?>
-      <p> <?= $message ?></p>
-<?php endif; ?>
+
+
 
 
 */
+
+?>
