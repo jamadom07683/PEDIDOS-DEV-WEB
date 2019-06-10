@@ -1,18 +1,20 @@
 <?php
+require_once('connection.php');
+$Nombre = $Usuario = $Contraseña '';
 
-include('config.php');
+$Nombre = $_POST['Nombre'];
+$Usuario = $_POST['Usuario'];
+$Contrasena = $_POST['Contraseña'];
 
-    if (isset($_POST['Nombre']) && isset($_POST['Usuario']) && isset($_POST['Contraseña'])){
-        $sentenciaSQL = "INSERT INTO `Usuario` ( `Nombre`, `Usuario`, `Contraseña`) ";
-        $sentenciaSQL = $sentenciaSQL."VALUES ( '";
-        $sentenciaSQL = $sentenciaSQL."".$_POST['Nombre']."', '";
-        $sentenciaSQL = $sentenciaSQL."".$_POST['Usuario']."', '";
-        $sentenciaSQL = $sentenciaSQL."".$_POST['Contraseña']."', '";
-        if ($conexion->query($sentenciaSQL) === TRUE) {
-            echo "Usuario creado";
-        } else {
-            echo "Error: " . $sentenciaSQL . "<br>" . $conexion->error;
-        }
-        $conexion->close();
-    }
+
+$sql = "INSERT INTO Usuario (Nombre,Usuario,Contraseña) VALUES ('$Nombre','$Usuario','$Contrasena')";
+$result = mysqli_query($conn, $sql);
+if($result)
+{
+	header("Location: inicioSesion.php");
+}
+else
+{
+	echo "Error :".$sql;
+}
 ?>

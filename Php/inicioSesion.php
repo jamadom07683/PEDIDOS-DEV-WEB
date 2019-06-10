@@ -31,14 +31,14 @@
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Usuario</label>
 
-                            <h2 class="Nom_form">Usuario</h2> <input class="form-control" type="text" id="" name="usuario">
+                            <h2 class="Nom_form">Usuario</h2> <input class="form-control" type="text" id="user" name="usuario">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Contraseña</label>
-                            <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="" name="contraseña">
+                            <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="password" name="contraseña">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Nombre</label>
-                            <h2 class="Nom_form">Nombre</h2> <input class="form-control" type="text" id="" name="usuario">
+                            <h2 class="Nom_form">Nombre</h2> <input class="form-control" type="text" id="Nombre" name="usuario">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -73,14 +73,14 @@
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Usuario</label>
 
-                            <h2 class="Nom_form">Usuario</h2> <input class="form-control" type="text" id="" name="usuario">
+                            <h2 class="Nom_form">Usuario</h2> <input class="form-control" type="text" id="Usuario" name="usuario">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Contraseña</label>
-                            <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="" name="contraseña">
+                            <h2 class="Nom_form">Contraseña</h2> <input class="form-control" type="password" id="Contraseña" name="contraseña">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>

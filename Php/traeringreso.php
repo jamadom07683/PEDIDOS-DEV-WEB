@@ -1,29 +1,26 @@
 <?php
 
-    $Usuario = $_POST['Usuario'];
-    $Contraseña = $_POST['Contraseña'];
+require_once('connection.php');
+$Usuario = $Contrasena  = '';
 
-    $Usuario = stripcslashes($Usuario);
-    $Contraseña = stripcslashes($Contraseña);
-
-    $Usuario=mysqli_real_escape_string($Usuario);
-    $Contraseña = mysqli_real_escape_string($Contraseña);
-
-    //conexión
-    $host = 'localhost';
-    $user = 'server';
-    $password = 'server';
-    $db = 'Proyecto';
-    $conexion = new mysqli($host, $user, $password, $db);
-
-    //resultado
-    $result= $mysqli->query("select*from Usuario where Usuario='$Usuario' and Contraseña = '$Contraseña'")
-        or die("Failed to query database".mysqli_error());
-    $row=mysqli_fetch_array($result);
-    if($row['Usuario']==$Usuario && $row['Contraseña']==$Contraseña){
-        echo "Login successful!!! Welcome".$row['Usuario'];
-    }else{
-        echo "Failed to login";
-    }
-
+$Usuario = $_POST['user'];
+$Contrasena = $_POST['password'];
+$sql = "SELECT * FROM Usuario WHERE Usuario='$Usuario' AND Contraseña='$Contrasena'";
+$result = mysqli_query($conn, $sql);
+if(mysqli_num_rows($result) > 0)
+{
+	while($row = mysqli_fetch_assoc($result))
+	{
+		$id = $row["ID"];
+		$Usuario = $row["user"];
+		session_start();
+		$_SESSION['id'] = $id;
+		$_SESSION['password'] = $Contrasena;
+	}
+	echo "Bienvenido";
+}
+else
+{
+	echo "Invalid email or password";
+}
 ?>
