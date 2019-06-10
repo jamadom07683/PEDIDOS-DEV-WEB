@@ -61,7 +61,7 @@
         <h1 class="text-center text-uppercase text-white ">Registrarse</h1>
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <form name="sentMessage" id="registroForm" name="novalidate" action="resultRegistrar.php" method="post">
+                <form name="sentMessage" id="registroForm" name="novalidate" action="resultRegistrar.php" method="get">
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Nombre</label>
