@@ -15,6 +15,7 @@ if (!empty( $_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['con
 
     if (mysqli_query($conn, $sql) === TRUE) {
         echo '<script language="javascript">alert("Registro completo");</script>';
+        header('refresh:4; url=inicioSesion.php');
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -26,7 +27,6 @@ else{
 
 
 mysqli_close( $conn );
-
 
 
 ?>
