@@ -20,7 +20,7 @@ if (!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['cont
     //'".$_POST['contraseña']."'
     //)";
 
-    $sql = "INSERT INTO Usuario ( Nombre,Usuario,Contraseña ) VALUES (
+    $sql = "INSERT INTO Usuario (Nombre,Usuario,Contraseña) VALUES (
     'Julian','julianflame','123')";
 
     /*
@@ -37,12 +37,11 @@ if (!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['cont
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
     }
 
 
     mysqli_close($conn);
-
 
 }
 
