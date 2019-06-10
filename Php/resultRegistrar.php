@@ -5,9 +5,10 @@ $Nombre = $Usuario = $Contraseña = '';
 
 $Nombre = $_POST['nombre'];
 $Usuario = $_POST['usuario'];
-$Contrasena = $_POST['contraseña'];
+$Contraseña = $_POST['contraseña'];
 
 
+<<<<<<< HEAD
 
 $sql = "INSERT INTO Usuario (Nombre,Usuario,Contraseña) VALUES ('".$_POST['nombre']."' , '".$_POST['usuario']."' , '".$_POST['contraseña']."')";
 $result = mysqli_query($conn, $sql);
