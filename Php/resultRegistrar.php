@@ -8,7 +8,7 @@ $Nombre = $_POST['nombre'];
 $Usuario = $_POST['usuario'];
 $Contrasena = $_POST['contraseña'];*/
 
-/*
+
 if (isset($_POST['nombre']) && isset($_POST['usuario']) && isset($_POST['contraseña'])){
 
     $sql = "INSERT INTO Usuario ( Nombre,Usuario,Contraseña ) VALUES (
@@ -22,18 +22,21 @@ if (isset($_POST['nombre']) && isset($_POST['usuario']) && isset($_POST['contras
     }else{
     echo '<br>paila ese man no se deja';
     }
-}*/
+}
 
+
+/*
 $message = '';
 
 if(!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['contraseña'])){
     $sql ="INSERT INTO Usuario (Nombre,Usuario,Contraseña) VALUES (:nombre,:usuario,:contraseña)";
     $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':nombre',$_POST['nombre']);
 
-    $stmt->bindParam(':usuario',$_POST['usuario']);
+    $stmt -> bindParam(':nombre', $_POST['nombre']);
 
-    $password = password_hash($_POST['contraseña'],PASSWORD_BCRYPT);
+    $stmt ->bindParam(':usuario',$_POST['usuario']);
+
+    $password = password_hash($_POST['contraseña'], PASSWORD_BCRYPT);
     $stmt->bindParam(':contraseña', $password);
 
      if ($stmt->execute()) {
@@ -50,3 +53,6 @@ if(!empty($_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['contr
  <?php if(!empty($message)): ?>
       <p> <?= $message ?></p>
 <?php endif; ?>
+
+
+*/
