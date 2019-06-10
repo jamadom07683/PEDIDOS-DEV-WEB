@@ -8,18 +8,14 @@ $Usuario = $_POST['usuario'];
 $Contrasena = $_POST['contraseña'];
 
 
-
-$sql = "INSERT INTO Usuario (Nombre,Usuario,Contraseña) VALUES ( '$Nombre' , '$Usuario' , '$Contrasena')";
-$result = mysqli_query($conn, $sql);
-if($result)
-{
-	header("Location: inicioSesion.php");
+if (isset($_POST['nombre']) && isset($_POST['usuario']) && isset($_POST['contraseña'])){
+$query = "INSERT INTO Usuario ( Nombre,Usuario,Contraseña) VALUES ('".$_POST['nombre']."','".$_POST['usuario']."', '".$_POST['contraseña']."')";
+echo $query;
+if ($conn -> query($query)){
+echo '<br>Se Insertó el usuario';
+}else{
+echo '<br>paila ese man no se deja';
 }
-else
-{
-	echo "Error :".$sql;
-}
-mysqli_close($conn);
 ?>
 
 
