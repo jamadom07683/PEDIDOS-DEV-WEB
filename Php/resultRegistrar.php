@@ -9,7 +9,7 @@ $Contraseña = $_POST['contraseña'];
 
 
 
-$sql = "INSERT INTO `Usuario` (`Nombre`,`Usuario`,`Contraseña`) VALUES ('".$_POST['nombre']."' , '".$_POST['usuario']."' , '".$_POST['contraseña']."')";
+$sql = "INSERT INTO `Usuario` (`Id_usuario`,`Nombre`,`Usuario`,`Contraseña`) VALUES (NULL, '".$_POST['nombre']."' , '".$_POST['usuario']."' , '".$_POST['contraseña']."')";
 $result = mysqli_query($conn, $sql);
 if($result)
 {
@@ -20,4 +20,5 @@ else
 	echo "Error :".$sql;
 }
 ?>
+
 
