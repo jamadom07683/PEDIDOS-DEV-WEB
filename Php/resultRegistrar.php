@@ -17,7 +17,7 @@ if (isset($_POST['nombre']) && isset($_POST['usuario']) && isset($_POST['contras
     '".$_POST['contraseña']."'
     )";
     echo $query;
-    if ($conn -> query($sql) == true){
+    if ($conn -> $query($sql) == true){
     echo '<br>See Insertó el usuario';
     }else{
     echo '<br>paila ese man no se deja';
