@@ -77,9 +77,10 @@
 
         $Nombre = $_POST['nombre'];
         $Usuario = $_POST['usuario'];
-        $Contrasena = $_POST['contraseña'];
+        $Password = $_POST['contraseña'];
+        $Password = $_POST['contraseña'];
 
-        $Password = password_hash($_POST['contraseña'], PASSWORD_BCRYPT);
+        //$Password = password_hash($_POST['contraseña'], PASSWORD_BCRYPT);
 
         if (!empty( $_POST['nombre']) && !empty($_POST['usuario']) && !empty($_POST['contraseña'])){
             $sql= "INSERT INTO Usuario (Nombre,Usuario,Contrasena) VALUES ('".$Nombre."','".$Usuario."','".$Password."')";
