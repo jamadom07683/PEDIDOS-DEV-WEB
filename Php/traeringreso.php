@@ -1,12 +1,12 @@
 <?php
 
     $Usuario = $_POST['Usuario'];
-    $Contraseña= $_POST['Contraseña'];
+    $Contraseña = $_POST['Contraseña'];
 
     $Usuario = stripcslashes($Usuario);
     $Contraseña = stripcslashes($Contraseña);
 
-    $Usuario=mysqli_real_escape_string($Uusario);
+    $Usuario=mysqli_real_escape_string($Usuario);
     $Contraseña = mysqli_real_escape_string($Contraseña);
 
     //conexión
