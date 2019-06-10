@@ -5,7 +5,7 @@ $Usuario = $Contrasena  = '';
 
 $Usuario = $_POST['usuario'];
 $Contrasena = $_POST['contraseña'];
-$sql = "SELECT * FROM Usuario WHERE Usuario='$Usuario' AND Contraseña='$Contrasena'";
+$sql = "SELECT * FROM Usuario WHERE Usuario='$Usuario' AND Contrasena='$Contrasena'";
 $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result) == 0)
 {

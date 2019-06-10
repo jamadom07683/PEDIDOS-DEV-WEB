@@ -7,7 +7,7 @@ require_once('connection.php');
 $Nombre = $_POST['nombre'];
 $Usuario = $_POST['usuario'];
 $Contrasena = $_POST['contraseña'];
-$post="";
+
 
 if ($Nombre=="" || $Usuario=="" || $Contrasena=""){
         echo 'alert("Datos incorrectos o incompletos")';
