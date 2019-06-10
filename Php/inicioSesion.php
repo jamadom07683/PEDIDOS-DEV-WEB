@@ -26,7 +26,7 @@
         <hr class="star-dark mb-5">
         <div class="row" id="row">
             <div class="col-lg-8 mx-auto">
-                <form name="sentMessage" id="sesionForm" name="nosesion" action="ingreso.php" method="post">
+                <form name="sentMessage" id="sesionForm" name="nosesion" action="traeringreso.php" method="post">
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Usuario</label>
