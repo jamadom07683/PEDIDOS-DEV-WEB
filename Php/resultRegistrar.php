@@ -47,7 +47,7 @@
     <br>
     <br>
 
-    <div class="Registro" id="Registro">
+    <div class="Registrar" id="Registrar">
         <div class="container">
             <br>
             <br>
