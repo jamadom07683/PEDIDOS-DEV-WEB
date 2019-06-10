@@ -5,20 +5,20 @@ $Nombre = $Usuario = $Contraseña = '';
 
 $Nombre = $_POST['nombre'];
 $Usuario = $_POST['usuario'];
-$Contrasena = $_POST['contraseña'];
+$Contraseña = $_POST['contraseña'];
 
 
-if (isset($_POST['Nombre']) && isset($_POST['Usuario']) && isset($_POST['Contraseña'])){
+if (isset($_POST['nombre']) && isset($_POST['usuario']) && isset($_POST['contraseña'])){
         $sentenciaSQL = "INSERT INTO `Usuario` ( `Nombre`, `Usuario`, `Contraseña`) ";
         $sentenciaSQL = $sentenciaSQL."VALUES ( '";
-        $sentenciaSQL = $sentenciaSQL."".$_POST['Nombre']."', '";
-        $sentenciaSQL = $sentenciaSQL."".$_POST['Usuario']."', '";
-        $sentenciaSQL = $sentenciaSQL."".$_POST['Contraseña']."', '";
-        if ($conexion->query($sentenciaSQL) === TRUE) {
+        $sentenciaSQL = $sentenciaSQL."".$_POST['nombre']."', '";
+        $sentenciaSQL = $sentenciaSQL."".$_POST['usuario']."', '";
+        $sentenciaSQL = $sentenciaSQL."".$_POST['contraseña']."', '";
+        if ($conn->query($sentenciaSQL) === TRUE) {
             echo "Usuario creado";
         } else {
-            echo "Error: " . $sentenciaSQL . "<br>" . $conexion->error;
+            echo "Error: " . $sentenciaSQL . "<br>" . $conn->error;
         }
-        $conexion->close();
+        $conn->close();
 }
 ?>
