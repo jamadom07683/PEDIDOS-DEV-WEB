@@ -400,7 +400,8 @@ form .row:first-child .floating-label-form-group {
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
-.Registrar p {  text-align: center;
+.Registrar p {
+    text-align: center;
     font-size: 38px;
     color: #024959;
     margin: 1em;
