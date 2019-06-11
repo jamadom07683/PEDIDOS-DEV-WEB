@@ -95,7 +95,7 @@
                     $_SESSION['password'] = $Contrasena;
                 }
                 echo "Bienvenido";
-                header('refresh:2; url=../index.php');
+                header('refresh:2; url=../index.php#Productos');
             }
         }
         else{
