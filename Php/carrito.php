@@ -37,7 +37,7 @@
                 <li class="items_nav"><a href="../index.php#About"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
                 <li class="items_nav"><a href="../index.php#Contacto"><span class="icon-mail"></span>Contactenos</a></li>
                 <li class="items_nav"><a href="#"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count"></span></a></li>
-                <li class="items-nav"><a href="../Php/inicioSesion.php"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
+                <li class="items-nav"><a href="inicioSesion.php"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
             </ul>
         </nav>
     </header>
@@ -68,7 +68,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-12 item">
                     <center>
                         <a class="img_pro des_pal" href="#"><img src="../Images/<?php echo $pro['Imagen'];?>" class="img-fluid"></a>
-                        <spam><?php echo $pro['Nombre']?></spam><br>
+                        <span><?php echo $pro['Nombre']?></span><br>
                         <a href="detallesCarro.php?id=<?php echo $pro['Id_producto'];?>"> Detalles</a>
                     </center>
                     </div>
