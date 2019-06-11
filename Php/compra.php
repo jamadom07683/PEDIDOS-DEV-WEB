@@ -111,9 +111,9 @@
                     }
                     echo '<center><p>Total: ' .$total. '</p></center>';
                 ?>
-
-                <center><a href="./carrito.php"> Ver catalogo </a></center>
-
+                <div>
+                    <center><a href="./carrito.php"> Ver catalogo </a></center>
+                </div>
             </div>
 
         </div>
