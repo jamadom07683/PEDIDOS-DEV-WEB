@@ -78,7 +78,6 @@
         $Nombre = $_POST['nombre'];
         $Usuario = $_POST['usuario'];
         $Password = $_POST['contraseña'];
-        $Password = $_POST['contraseña'];
 
         //$Password = password_hash($_POST['contraseña'], PASSWORD_BCRYPT);
 

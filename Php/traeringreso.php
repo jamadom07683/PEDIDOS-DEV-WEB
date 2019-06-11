@@ -80,21 +80,30 @@
         $result = mysqli_query($conn, $sql);
         $datos = mysqli_fetch_array($result);
 
-        if(mysqli_num_rows($result) == 0){
+        if ((!empty($_POST['usuario']) && !empty($_POST['contraseña'])){){
 
-            echo "Usuario o contraseña invalida";
+            if(mysqli_num_rows($result) == 0){
+
+                echo "Usuario o contraseña invalida";
+            }
+            else{
+                while($row = mysqli_fetch_assoc($result)){
+                    $id = $row["ID"];
+                    $Usuario = $row["user"];
+                    session_start();
+                    $_SESSION['id'] = $id;
+                    $_SESSION['password'] = $Contrasena;
+                }
+                echo "Bienvenido";
+                header('refresh:2; url=../index.php');
+            }
         }
         else{
-            while($row = mysqli_fetch_assoc($result)){
-                $id = $row["ID"];
-                $Usuario = $row["user"];
-                session_start();
-                $_SESSION['id'] = $id;
-                $_SESSION['password'] = $Contrasena;
-            }
-            echo "Bienvenido";
-            header('refresh:2; url=../index.php');
+             echo ("Datos incompletos");
         }
+
+
+
     }
 
     ?>
