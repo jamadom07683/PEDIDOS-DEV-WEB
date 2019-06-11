@@ -66,7 +66,7 @@
                 while ($pro=mysqli_fetch_array($result)){
                 ?>
                     <center>
-                        <a class="img_pro des_pal" href="#"><img src="../Images/<?php echo $pro['Imagen'];?>" class="img-fluid"></a>
+                        <a class="img_pro des_pal" href="#"><img src="../Images/<?php echo $pro['Imagen'];?>" class="img-fluid"></a><br>
                         <span class="text-white"><?php echo $pro['Nombre']?></span><br>
                         <span class="text-white">Precio: <?php echo $pro['Precio']?></span><br>
                         <a href="compra.php?id=<?php echo $pro['Id_producto'];?>"> Añadir al carro</a>

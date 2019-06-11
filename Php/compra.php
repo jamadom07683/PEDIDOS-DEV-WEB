@@ -56,17 +56,34 @@
             <h1 class="text-center text-uppercase text-white mb-4">Carrito de compra</h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
-                <p>
                 <?php
-
+                $total=0
                     if (isset($_SESSION['carrito'])){
+                        $datos=$_SESSION['carrito'];
+                        $total=0
+                        for($i=0;i<count($datos);$i++){
+                        ?>
+                            <div class="col-lg-3 col-md-3 col-sm-12 item">
+                                <center>
+                                    <a class="img_pro des_pal" href="#"><img src="../Images/<?php echo $datos[$i]['Imagen']; ?>" class="img-fluid"></a><br>
+                                    <span class="text-white"><?php echo $datos[$i]['Nombre']?></span><br>
+                                    <span class="text-white">Precio: <?php echo $datos[$i]['Precio']?></span><br>
+                                    <span class="text-white">Cantidad: <input type="text" value=" <?php echo $datos[$i]['Cantidad']?>"> </span><br>
+                                    <span class="text-white">Subtotal: <?php echo $datos[$i]['Precio']*$datos[$i]['Cantidad']?></span>
+                                </center>
+                            </div>
 
+                <?php
+                    $total=($datos[$i]['Precio']*$datos[$i]['Cantidad'])+$total;
+                        }
                     }
                     else{
-                        echo "El carrito de compras esta vacio";
+                        echo '<p>El carrito de compras esta vacio <p>';
                     }
+                    echo '<p>Total: ' .$total. '<p>';
                 ?>
-                </p>
+
+                <center><a href="./carrito.php"> Ver catalogo </a></center>
 
             </div>
 
