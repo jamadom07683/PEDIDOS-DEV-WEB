@@ -56,20 +56,17 @@
             <h1 class="text-center text-uppercase text-white mb-4">Carrito de compra</h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
-
+                <p>
                 <?php
 
                     if (isset($_SESSION['carrito'])){
 
                     }
                     else{
-                    ?>
-                        <p> El carrito de compras esta vacio </p>'
-
-                        <?php
+                        echo "El carrito de compras esta vacio";
                     }
-
                 ?>
+                </p>
 
             </div>
 
