@@ -69,11 +69,12 @@
                 ?>
                     <div class="col-lg-3 col-md-3 col-sm-12 item">
                     <center>
-                        <img src="../Images/<?php echo $p['Imagen'];?>"> <br>
+                        <a class="img_pro des_pal" href="#"><img src="../Images/<?php echo $p['Imagen'];?>" class="img-fluid"></a>
                         <spam><?php echo $p['Nombre']?></spam><br>
                         <a href="detallesCarro.php"> Detalles</a>
                     </center>
                     </div>
+
             <?php
                 }
             ?>
