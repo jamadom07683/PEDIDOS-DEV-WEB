@@ -17,6 +17,29 @@
             $arreglo[$numero]['Cantidad']=$arreglo[$numero]['Cantidad']+1;
             $_SESSION['carrito']=$arreglo;
         }
+        else{
+            $Nombre="";
+            $Precio=0;
+            $Imagen="";
+
+            $sql="SELECT * FROM Producto WHERE Id_producto=".$_GET['id'];
+
+            $result=mysqli_query($conn,$sql);
+
+            while ($pro=mysqli_fetch_array($result)){
+                $Nombre=$pro['Nombre'];
+                $Precio=$pro['Precio'];
+                $Imagen=$pro['Imagen'];
+            }
+            $datosnuevos=array('Id' => $_GET['id'],
+                            'Nombre' => $Nombre,
+                            'Precio' => $Precio,
+                            'Imagen' => $Imagen,
+                            'Cantidad' => 1);
+
+            array_push($arreglo,$datosnuevos);
+            $_SESSION['carrito']=$arreglo;
+        }
 
     }
     else{
