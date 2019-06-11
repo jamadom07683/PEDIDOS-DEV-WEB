@@ -53,15 +53,34 @@
     <!-- Carrito de Compras -->
     <div class="Carrito text-center" id="Carrito">
         <div class="container">
-            <h1 class="text-center text-uppercase text-white mb-4">Completar compra</h1>
+            <h1 class="text-center text-uppercase text-white mb-4">Carrito de compra</h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
-                <p> </p>
+
+            <?php
+                include ('connection.php');
+
+                $re=mysql_query("SELECT * FROM Producto") or die(mysql_error());
+
+                while ($p=mysql_fetch_array($re)){
+                ?>
+                    <div class="col-lg-3 col-md-3 col-sm-12 item">
+                    <center>
+                        <img src="../Images/<?php echo $p['Imagen'];?>"> <br>
+                        <spam><?php echo $p['Nombre']?></spam><br>
+                        <a href="detallesCarro.php"> Detalles</a>
+                    </center>
+                    </div>
+            <?php
+                }
+            ?>
+
             </div>
 
         </div>
 
     </div>
+
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>w
