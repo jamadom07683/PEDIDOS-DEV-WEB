@@ -109,10 +109,10 @@
                     else{
                         echo '<center><p>El carrito de compras esta vacio </p><center>';
                     }
-                    echo '<center><p>Total: ' .$total. '</p></center>';
+                    echo '<center><p>Total: ' .$total. '</p></center><br>';
                 ?>
                 <div>
-                    <center><a href="./carrito.php"> Ver catalogo </a></center>
+                    <a href="./carrito.php"> Ver catalogo </a>
                 </div>
             </div>
 
