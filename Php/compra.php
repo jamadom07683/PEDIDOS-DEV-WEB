@@ -2,7 +2,7 @@
     session_start();
     include ('connection.php');
     if(isset($_SESSION['carrito'])){
-        $arreglo=$_SESSION['carrito']
+        $arreglo=$_SESSION['carrito'];
         $encontro=false;
         $numero=0;
 
