@@ -1,4 +1,33 @@
-<?php  session_start() ?>
+<?php
+    session_start();
+    include ('connection.php');
+    if(isset($_SESSION['carrito'])){
+
+    }
+    else{
+        if(isset($_GET['id'])){
+            $Nombre="";
+            $Precio=0;
+            $Imagen="";
+
+            $sql="SELECT * FROM Producto WHERE Id_producto=".$_GET['id'];
+
+            $result=mysqli_query($conn,$sql);
+
+            while ($pro=mysqli_fetch_array($result)){
+                $Nombre=$pro['Nombre'];
+                $Precio=$pro['Precio'];
+                $Imagen=$pro['Imagen'];
+            }
+            $arreglo[]=array('Id' => $_GET['id'],
+                            'Nombre' => $Nombre,
+                            'Precio' => $Precio,
+                            'Imagen' => $Imagen,
+                            'Cantidad' => 1);
+            $_SESSION['carrito']=$arreglo;
+        }
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
