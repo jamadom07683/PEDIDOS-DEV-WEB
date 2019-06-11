@@ -78,7 +78,7 @@
                         }
                     }
                     else{
-                        echo '<p>El carrito de compras esta vacio <p>';
+                        echo '<p>El carrito de compras esta vacio <p><br>';
                     }
                     echo '<p>Total: ' .$total. '<p>';
                 ?>
