@@ -1,3 +1,5 @@
+<?php  session_start() ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,34 +50,24 @@
     <br>
 
 
-    <!-- Detalles Carrito de Compras -->
+    <!-- Añadir producto a Carrito de Compras -->
     <div class="Carrito text-center" id="Carrito">
         <div class="container">
             <h1 class="text-center text-uppercase text-white mb-4">Carrito de compra</h1>
             <hr class="star-dark mb-5">
             <div class="row" id="row">
 
-            <?php
-                include ('connection.php');
+                <?php
 
-                $sql="SELECT * FROM Producto WHERE Id_producto=".$_GET['id'];
+                    if (isset($_SESSION['carrito'])){
 
-                $result=mysqli_query($conn,$sql);
+                    }
+                    else{
+                        echo '<center><h2>El carrito de compras esta vacio</h2></center>'
+                    }
 
-
-                while ($pro=mysqli_fetch_array($result)){
                 ?>
-                    <center>
-                        <a class="img_pro des_pal" href="#"><img src="../Images/<?php echo $pro['Imagen'];?>" class="img-fluid"></a>
-                        <span class="text-white"><?php echo $pro['Nombre']?></span><br>
-                        <span class="text-white">Precio: <?php echo $pro['Precio']?></span><br>
-                        <a href="compra.php?id=<?php echo $pro['Id_producto'];?>"> Añadir al carro</a>
-                    </center>
 
-
-            <?php
-                }
-            ?>
 
             </div>
 
