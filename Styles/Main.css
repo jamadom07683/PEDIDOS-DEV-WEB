@@ -374,6 +374,13 @@ form .row:first-child .floating-label-form-group {
     margin: 2em;
 }
 
+.Carrito p {
+    text-align: center;
+    font-size: 38px;
+    color: #024959;
+    margin: 1em;
+}
+
 /*Registro*/
 .Registro {
     display: none;

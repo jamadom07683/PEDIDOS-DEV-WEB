@@ -63,7 +63,7 @@
 
                     }
                     else{
-                        echo '<center><h2>El carrito de compras esta vacio</h2></center>'
+                        echo '<p>El carrito de compras esta vacio</p>';
                     }
 
                 ?>
