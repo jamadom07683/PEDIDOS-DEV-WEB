@@ -2,45 +2,48 @@
     session_start();
     include ('connection.php');
     if(isset($_SESSION['carrito'])){
-        $arreglo=$_SESSION['carrito'];
-        $encontro=false;
-        $numero=0;
+        if(isset($_GET['id'])){
 
-        for($i=0;$i<count($arreglo);$i++){
-            if($arreglo[$i]['Id']==$_GET['id']){
-                $encontro=true;
-                $numero=$i;
+            $arreglo=$_SESSION['carrito'];
+            $encontro=false;
+            $numero=0;
+
+            for($i=0;$i<count($arreglo);$i++){
+                if($arreglo[$i]['Id']==$_GET['id']){
+                    $encontro=true;
+                    $numero=$i;
+                }
             }
-        }
 
-        if($encontro==true){
-            $arreglo[$numero]['Cantidad']=$arreglo[$numero]['Cantidad']+1;
-            $_SESSION['carrito']=$arreglo;
-        }
-        else{
-            $Nombre="";
-            $Precio=0;
-            $Imagen="";
-
-            $sql="SELECT * FROM Producto WHERE Id_producto=".$_GET['id'];
-
-            $result=mysqli_query($conn,$sql);
-
-            while ($pro=mysqli_fetch_array($result)){
-                $Nombre=$pro['Nombre'];
-                $Precio=$pro['Precio'];
-                $Imagen=$pro['Imagen'];
+            if($encontro==true){
+                $arreglo[$numero]['Cantidad']=$arreglo[$numero]['Cantidad']+1;
+                $_SESSION['carrito']=$arreglo;
             }
-            $datosnuevos=array('Id' => $_GET['id'],
-                            'Nombre' => $Nombre,
-                            'Precio' => $Precio,
-                            'Imagen' => $Imagen,
-                            'Cantidad' => 1);
+            else{
+                $Nombre="";
+                $Precio=0;
+                $Imagen="";
 
-            array_push($arreglo,$datosnuevos);
-            $_SESSION['carrito']=$arreglo;
+                $sql="SELECT * FROM Producto WHERE Id_producto=".$_GET['id'];
+
+                $result=mysqli_query($conn,$sql);
+
+                while ($pro=mysqli_fetch_array($result)){
+                    $Nombre=$pro['Nombre'];
+                    $Precio=$pro['Precio'];
+                    $Imagen=$pro['Imagen'];
+                }
+                $datosnuevos=array('Id' => $_GET['id'],
+                                'Nombre' => $Nombre,
+                                'Precio' => $Precio,
+                                'Imagen' => $Imagen,
+                                'Cantidad' => 1);
+
+                array_push($arreglo,$datosnuevos);
+                $_SESSION['carrito']=$arreglo;
+            }
+
         }
-
     }
     else{
         if(isset($_GET['id'])){
@@ -105,7 +108,7 @@
                 <li class="items_nav"><a href="../index.php#Productos"><span class="icon-briefcase"></span>Productos</a></li>
                 <li class="items_nav"><a href="../index.php#About"><span class="icon-rocket"></span>Equipo de Trabajo</a></li>
                 <li class="items_nav"><a href="../index.php#Contacto"><span class="icon-mail"></span>Contactenos</a></li>
-                <li class="items_nav"><a href="carrito.php"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count"></span></a></li>
+                <li class="items_nav"><a href="#"><span class="fas fa-shopping-cart"></span>Carrito <span id="items_count"></span></a></li>
                 <li class="items-nav"><a href="inicioSesion.php"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
             </ul>
         </nav>
@@ -135,7 +138,7 @@
                                     <a class="img_pro des_pal" href="#"><img src="../Images/<?php echo $datos[$i]['Imagen']; ?>" class="img-fluid"></a><br>
                                     <span class="text-white"><?php echo $datos[$i]['Nombre']?></span><br>
                                     <span class="text-white">Precio: <?php echo $datos[$i]['Precio']?></span><br>
-                                    <span class="text-white">Cantidad: <input type="text" value=" <?php echo $datos[$i]['Cantidad']?>"> </span><br>
+                                    <span class="text-white">Cantidad: <?php echo $datos[$i]['Cantidad']?> </span><br>
                                     <span class="text-white">Subtotal: <?php echo $datos[$i]['Precio']*$datos[$i]['Cantidad']?></span>
                                 </center>
                             </div>
@@ -150,7 +153,7 @@
                     echo '<center><p>Total: ' .$total. '</p></center><br>';
                 ?>
                 <div>
-                    <a href="./carrito.php"> Ver catalogo </a>
+                    <a href="carrito.php"> Ver catalogo </a>
                 </div>
             </div>
 
