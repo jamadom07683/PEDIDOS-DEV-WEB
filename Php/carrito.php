@@ -46,9 +46,7 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
+
 
     <!-- Carrito de Compras -->
     <div class="Carrito text-center" id="Carrito">
