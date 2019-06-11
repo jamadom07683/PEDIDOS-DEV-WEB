@@ -90,7 +90,7 @@
                     if (isset($_SESSION['carrito'])){
                         $datos=$_SESSION['carrito'];
                         $total=0;
-                        for($i=0;i<count($datos);$i++){
+                        for($i=0;$i<count($datos);$i++){
                         ?>
                             <div class="col-lg-3 col-md-3 col-sm-12 item">
                                 <center>
