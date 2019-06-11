@@ -80,7 +80,7 @@
         $result = mysqli_query($conn, $sql);
         $datos = mysqli_fetch_array($result);
 
-        if ((!empty($_POST['usuario']) && !empty($_POST['contraseña'])){){
+        if ((!empty($_POST['usuario']) && !empty($_POST['contraseña']))){
 
             if(mysqli_num_rows($result) == 0){
 
