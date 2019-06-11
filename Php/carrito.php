@@ -60,9 +60,9 @@
             <?php
                 include ('connection.php');
 
-                $sql="SELECT * FROM Producto"
+                $sql="SELECT * FROM Producto";
 
-                $result=mysqli_query($conn,$sql)
+                $result=mysqli_query($conn,$sql);
 
 
                 while ($p=mysqli_fetch_array($result)){
