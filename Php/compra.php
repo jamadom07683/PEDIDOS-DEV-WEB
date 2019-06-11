@@ -78,9 +78,9 @@
                         }
                     }
                     else{
-                        echo '<p>El carrito de compras esta vacio <p><br>';
+                        echo '<center><p>El carrito de compras esta vacio </p><center>';
                     }
-                    echo '<p>Total: ' .$total. '<p>';
+                    echo '<center><p>Total: ' .$total. '</p></center>';
                 ?>
 
                 <center><a href="./carrito.php"> Ver catalogo </a></center>
