@@ -57,10 +57,10 @@
             <hr class="star-dark mb-5">
             <div class="row" id="row">
                 <?php
-                $total=0
+                $total=0;
                     if (isset($_SESSION['carrito'])){
                         $datos=$_SESSION['carrito'];
-                        $total=0
+                        $total=0;
                         for($i=0;i<count($datos);$i++){
                         ?>
                             <div class="col-lg-3 col-md-3 col-sm-12 item">
@@ -74,7 +74,7 @@
                             </div>
 
                 <?php
-                    $total=($datos[$i]['Precio']*$datos[$i]['Cantidad'])+$total;
+                            $total=($datos[$i]['Precio']*$datos[$i]['Cantidad'])+$total;
                         }
                     }
                     else{
