@@ -68,8 +68,8 @@
                     <div class="col-lg-3 col-md-3 col-sm-12 item">
                     <center>
                         <a class="img_pro des_pal" href="#"><img src="../Images/<?php echo $pro['Imagen'];?>" class="img-fluid"></a>
-                        <span><?php echo $pro['Nombre']?></span><br>
-                        <span>Precio: <?php echo $pro['Precio']?></span><br>
+                        <span class="text-white"><?php echo $pro['Nombre']?></span><br>
+                        <span class="text-white">Precio: <?php echo $pro['Precio']?></span><br>
                         <a href="detallesCarro.php?id=<?php echo $pro['Id_producto'];?>"> Detalles</a>
                     </center>
                     </div>
