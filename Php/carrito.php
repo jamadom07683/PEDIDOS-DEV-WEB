@@ -60,9 +60,9 @@
             <?php
                 include ('connection.php');
 
-                $re=mysql_query("SELECT * FROM Producto") or die(mysql_error());
+                $re=mysqli_query("SELECT * FROM Producto") or die(mysql_error());
 
-                while ($p=mysql_fetch_array($re)){
+                while ($p=mysqli_fetch_array($re)){
                 ?>
                     <div class="col-lg-3 col-md-3 col-sm-12 item">
                     <center>
